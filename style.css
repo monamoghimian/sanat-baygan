@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Utilities & Accents */
 .text-primary-green {
-    color: var(--primary-green);
+    color: var(--primary-green-hover);
 }
 
 .bg-primary-green {
