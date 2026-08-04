@@ -47,7 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-brand img {
     width: 150px;
-    height: auto;
+    height: 60px;
+    object-fit: contain;
 }
 
 .navbar-nav .nav-link {
@@ -383,6 +384,7 @@ footer a:hover {
     }
     .navbar-brand img {
         width: 110px;
+        height: 45px;
     }
 }
 
