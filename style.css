@@ -112,7 +112,20 @@ h1, h2, h3, h4, h5, h6 {
 .hero-slider .carousel-item {
     height: 70vh;
     min-height: 450px;
-    background-color:var(--cream-bg);;
+    background-color:var(--cream-bg);
+    position: relative;
+}
+
+
+.hero-slider .carousel-item > div:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-slider .carousel-item > div:last-child {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
 }
 
 .hero-slider .carousel-caption {
@@ -293,7 +306,7 @@ html[dir="rtl"] .hero-slider .carousel-item:nth-child(1) .carousel-caption {
 
 /* Footer Styles */
 footer {
-    background-color: var(--primary-green);
+    background-color: var(--primary-green-hover);
     color: white;
 }
 
@@ -351,8 +364,7 @@ footer a:hover {
     .hero-slider .carousel-item {
         height: 45vh;
     }
-    
-    /* ارتفاع دادن به خود عکس و جلوگیری از کشیدگی آن */
+/* ارتفاع دادن به خود عکس و جلوگیری از کشیدگی آن */
     .hero-slider .carousel-item img {
         height: 50vh !important;
         object-fit: cover; 
@@ -366,3 +378,5 @@ footer a:hover {
         font-size: 0.9rem;
     }
 }
+
+
