@@ -53,8 +53,6 @@
             <img
               src="images/logohigh.png"
               alt="لوگو صنعت بایگان آریا"
-              width="150"
-              height="60"
               class="d-inline-block align-text-top"
             />
           </a>
@@ -63,12 +61,13 @@
           <div class="d-flex align-items-center d-lg-none">
             <!-- دکمه تماس تلفنی (فقط در موبایل نمایش داده می‌شود) -->
             <a
-              href="tel:09123060030"
+              href="tel:091230600"
               class="btn btn-category btn-sm rounded-circle d-flex align-items-center justify-content-center mx-2 shadow-sm text-white"
               style="width: 38px; height: 38px"
             >
               <i class="bi bi-telephone-fill fs-6"></i>
             </a>
+            <a href="#" class="lang-switcher">EN</a>
 
             <!-- دکمه همبرگری منوی موبایل -->
             <button
@@ -87,10 +86,66 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" href="#">صفحه اصلی</a>
+                <a class="nav-link" href="index.html">صفحه اصلی</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#products">محصولات آشپزخانه</a>
+              <!-- ۱. منوی محصولات مخصوص موبایل و تبلت (بدون زیرمنو، کلیک مستقیم به صفحه) -->
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="kitchen-products.html">
+                  محصولات آشپزخانه
+                </a>
+              </li>
+              <!-- منوی محصولات مخصوص دسکتاپ (بدون تداخل و دراپ‌داون اجباری) -->
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a
+                  class="nav-link active"
+                  href="kitchen-products.html"
+                  id="kitchenDropdown"
+                >
+                  محصولات آشپزخانه
+                  <i class="bi bi-chevron-down" style="font-size: 0.75rem"></i>
+                </a>
+                <ul
+                  class="dropdown-menu border-0 shadow-sm py-2"
+                  aria-labelledby="kitchenDropdown"
+                  style="background-color: var(--cream-bg, #fdfbf7)"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item py-2"
+                      href="#pot-products"
+                      style="
+                        text-align: right;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                      "
+                      >سرویس قابلمه</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item py-2"
+                      href="#metal-products"
+                      style="
+                        text-align: right;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                      "
+                      >سرویس فلزی</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item py-2"
+                      href="#wood-products"
+                      style="
+                        text-align: right;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                      "
+                      >سرویس چوبی</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#products">تجهیزات بایگانی</a>
@@ -103,13 +158,13 @@
               </li>
             </ul>
             <div class="d-flex align-items-center gap-3">
-              <a href="index-en.html" class="lang-switcher">EN</a>
+              <a href="#" class="lang-switcher d-none d-lg-block">EN</a>
               <!-- دکمه تماس نسخه دسکتاپ -->
               <a
                 href="#contact"
                 class="btn-contact-header d-none d-sm-inline-block"
               >
-               درخواست مشاوره<i class="bi bi-telephone-fill ms-1"></i>
+                درخواست مشاوره<i class="bi bi-telephone-fill ms-1"></i>
               </a>
             </div>
           </div>
@@ -117,320 +172,744 @@
       </nav>
     </header>
 
- <main>
-    <!-- 1. Hero Section -->
-    <section class="bg-cream-section py-5 mb-5">
-        <div class="container text-center py-4">
-            <h1 class="fw-bold mb-3">محصولات آشپزخانه</h1>
-            <h2 class="h4 text-muted mb-4">کیفیت و زیبایی در جزئیات</h2>
-            <p class="mx-auto text-muted small" style="max-width: 500px;">
-                تولید شده با بهترین مواد اولیه و پوشش‌های مقاوم<br>برای استفاده روزمره و ماندگار
-            </p>
-        </div>
-    </section>
+    <main>
+      <!-- Hero Section (تصویر ثابت هیرو با تگ ایمیج برای جلوگیری از خطای پس‌زمینه) -->
+      <section class="hero-slider mb-2">
+        <!-- نسخه موبایل -->
+        <div class="d-block d-md-none">
+          <div
+            class="position-relative w-100 shadow-sm overflow-hidden text-center"
+            style="
+              height: 30vh;
+              border-bottom-left-radius: 20px;
+              border-bottom-right-radius: 20px;
+            "
+          >
+            <!-- عکس واقعی موبایل -->
+            <img
+              src="images/products_hero_mobile.png"
+              alt="محصولات آشپزخانه"
+              class="w-100 h-100"
+              style="object-fit: cover; object-position: center"
+            />
 
-    <!-- 2. Category Anchor Links -->
-    <section class="container mb-5">
+            <!-- باکس متن که روی عکس قرار می‌گیرد -->
+            <div
+              class="position-absolute top-0 start-50 translate-middle-x pt-3 px-3 w-100"
+              style="z-index: 2"
+            >
+              <h1 class="fw-bold fs-6 mb-1 text-white">
+                کیفیت در
+                <span style="color: var(--primary-green)"
+                  >محصولات آشپزخانه</span
+                >
+              </h1>
+              <p
+                class="text-white-50 small mb-0"
+                style="font-size: 0.7rem !important"
+              >
+                کیفیت و زیبایی در جزئیات
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- نسخه دسکتاپ -->
+        <div class="d-none d-md-block">
+          <div
+            class="position-relative w-100 overflow-hidden shadow-sm"
+            style="height: 45vh; border-radius: 0 0 20px 20px"
+          >
+            <!-- عکس واقعی دسکتاپ -->
+            <img
+              src="images/products_hero_desktop.png"
+              alt="محصولات آشپزخانه"
+              class="w-100 h-100"
+              style="object-fit: cover; object-position: center"
+            />
+
+            <!-- باکس متن با سایه برای خوانایی بهتر روی عکس -->
+            <div class="position-absolute top-0 start-50 translate-middle-x mt-4 text-center w-100" style="padding: 15px 30px; z-index: 2; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);">
+              <!-- استفاده از fs-3 برای بزرگتر شدن عنوان و fw-bolder برای ضخامت بیشتر -->
+              <h1 class="fw-bolder fs-3 mb-2 text-white">
+                کلکسیون <span style="color: var(--primary-green);">محصولات آشپزخانه</span>   </h1>
+              <!-- بزرگتر کردن فونت زیرعنوان (1rem) و سفید کردن آن -->
+              <p class="text-white my-1 fw-bold" style="font-size: 1rem;">
+                هارمونی بی‌نظیر چوب، فلز و طراحی مدرن برای چیدمان رویایی شما.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      >
+      <!-- 2. Category Anchor Links -->
+      <section class="container mb-5">
         <div class="text-center mb-4">
-            <h2 class="h4 fw-bold">دسته‌بندی محصولات</h2>
+          <h2 class="h4 fw-bold">دسته‌بندی محصولات</h2>
         </div>
-        <div class="row g-4 justify-content-center">
-            <div class="col-12 col-md-4">
-                <div class="category-card p-4 h-100 text-center bg-cream-card rounded-4 shadow-sm border-0">
-                    <h3 class="h5 fw-bold mb-2">سرویس چوبی</h3>
-                    <p class="text-muted small mb-4">محصولات زیبا از چوب طبیعی</p>
-                    <a href="#wood-products" class="btn btn-category py-2 px-4 rounded-pill fs-7">مشاهده محصولات</a>
+        <!-- اضافه شدن dir="rtl" برای اطمینان از چیدمان صحیح راست به چپ -->
+        <div class="row g-4 justify-content-center" dir="rtl">
+          <!-- کارت دسته‌بندی قابلمه -->
+          <div class="col-12 col-md-4">
+            <div
+              class="card h-100 border-0 bg-cream-card rounded-4 shadow-sm overflow-hidden transition-smooth product-card-hover"
+            >
+              <div class="row g-0 h-100 align-items-center">
+                <!-- بخش متن (راست) -->
+                <div class="col-7 p-3 p-xl-4">
+                  <h3 class="h6 fw-bold mb-2">سرویس قابلمه</h3>
+                  <p class="text-muted mb-3" style="font-size: 0.75rem">
+                    سرویس‌های متنوع با پوشش مقاوم
+                  </p>
+                  <a
+                    href="#pot-products"
+                    class="btn text-white py-1 px-3 rounded-pill"
+                    style="
+                      font-size: 0.75rem;
+                      background-color: var(--primary-green);
+                    "
+                  >
+                    مشاهده محصولات <i class="bi bi-arrow-left small ms-1"></i>
+                  </a>
                 </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="category-card p-4 h-100 text-center bg-cream-card rounded-4 shadow-sm border-0">
-                    <h3 class="h5 fw-bold mb-2">سرویس فلزی</h3>
-                    <p class="text-muted small mb-4">اکسسوری‌های کاربردی آشپزخانه</p>
-                    <a href="#metal-products" class="btn btn-category py-2 px-4 rounded-pill fs-7">مشاهده محصولات</a>
+                <!-- بخش عکس (چپ) -->
+                <div class="col-5 p-2">
+                  <div class="category-img-box">
+                    <img src="images/cookware.png" alt="سرویس قابلمه" />
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="category-card p-4 h-100 text-center bg-cream-card rounded-4 shadow-sm border-0">
-                    <h3 class="h5 fw-bold mb-2">سرویس قابلمه</h3>
-                    <p class="text-muted small mb-4">سرویس‌های متنوع با پوشش مقاوم</p>
-                    <a href="#pot-products" class="btn btn-category py-2 px-4 rounded-pill fs-7">مشاهده محصولات</a>
-                </div>
-            </div>
-        </div>
-    </section>
+          </div>
 
-    <!-- 3. Pots Section (5 Columns on Desktop, 1 Column on Mobile) -->
-    <section id="pot-products" class="container mb-5" style="scroll-margin-top: 120px;">
-        <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2">
-            <h2 class="h4 fw-bold mb-0">محصولات سرویس قابلمه</h2>
-            <!-- از کلاس‌های rtl-friendly برای آیکون استفاده شده تا در انگلیسی برعکس شود -->
-            <a href="#" class="text-primary-green text-decoration-none small fw-bold">مشاهده همه <i class="bi bi-arrow-left ms-1"></i></a>
+          <!-- کارت دسته‌بندی فلزی -->
+          <div class="col-12 col-md-4">
+            <div
+              class="card h-100 border-0 bg-cream-card rounded-4 shadow-sm overflow-hidden transition-smooth product-card-hover"
+            >
+              <div class="row g-0 h-100 align-items-center">
+                <div class="col-7 p-3 p-xl-4">
+                  <h3 class="h6 fw-bold mb-2">سرویس فلزی</h3>
+                  <p class="text-muted mb-3" style="font-size: 0.75rem">
+                    اکسسوری‌های کاربردی آشپزخانه
+                  </p>
+                  <a
+                    href="#metal-products"
+                    class="btn text-white py-1 px-3 rounded-pill"
+                    style="
+                      font-size: 0.75rem;
+                      background-color: var(--primary-green);
+                    "
+                  >
+                    مشاهده محصولات <i class="bi bi-arrow-left small ms-1"></i>
+                  </a>
+                </div>
+                <div class="col-5 p-2">
+                  <div class="category-img-box">
+                    <img src="images/metal-category.png" alt="سرویس فلزی" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- کارت دسته‌بندی چوبی -->
+          <div class="col-12 col-md-4">
+            <div
+              class="card h-100 border-0 bg-cream-card rounded-4 shadow-sm overflow-hidden transition-smooth product-card-hover"
+            >
+              <div class="row g-0 h-100 align-items-center">
+                <div class="col-7 p-3 p-xl-4">
+                  <h3 class="h6 fw-bold mb-2">سرویس چوبی</h3>
+                  <p class="text-muted mb-3" style="font-size: 0.75rem">
+                    محصولات زیبا از چوب طبیعی
+                  </p>
+                  <a
+                    href="#wood-products"
+                    class="btn text-white py-1 px-3 rounded-pill"
+                    style="
+                      font-size: 0.75rem;
+                      background-color: var(--primary-green);
+                    "
+                  >
+                    مشاهده محصولات <i class="bi bi-arrow-left small ms-1"></i>
+                  </a>
+                </div>
+                <div class="col-5 p-2">
+                  <div class="category-img-box">
+                    <img src="images/wood-category.png" alt="سرویس چوبی" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
+      </section>
+
+      <!-- 3. Pots Section (5 Columns on Desktop, 1 Column on Mobile) -->
+      <section
+        id="pot-products"
+        class="container mb-5"
+        style="scroll-margin-top: 120px"
+      >
+        <div
+          class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2"
+        >
+          <h2 class="h4 fw-bold mb-0">محصولات سرویس قابلمه</h2>
+          <!-- لینک مشاهده همه -->
+          <a
+            href="#"
+            class="text-primary-green text-decoration-none small fw-bold transition-smooth hover-scale"
+          >
+            مشاهده همه <i class="bi bi-arrow-left ms-1"></i>
+          </a>
+        </div>
+
         <!-- Grid: 1 col (mobile), 3 cols (tablet), 5 cols (desktop) -->
         <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4">
-            
-            <!-- Product Card 1 -->
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover">
-                    <div class="mb-3 w-100" style="aspect-ratio: 1/1;">
-                        <img src="images/vicino.png" alt="سرویس قابلمه 11 پارچه Vicino" class="img-fluid w-100 h-100" style="object-fit: contain;">
-                    </div>
-                    <h3 class="h6 fw-bold mb-1">Vicino</h3>
-                    <p class="text-muted small mb-0">سرویس ۱۱ پارچه</p>
-                </div>
+          <!-- Product Card 1 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img
+                  src="images/cookware.png"
+                  alt="سرویس قابلمه 16 پارچه گلکسی"
+                />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">Galaxy Series</h3>
+              <p class="text-muted small mb-0">سرویس ۱۶ پارچه (ماربل مشکی)</p>
             </div>
-            
-            <!-- Product Card 2 -->
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover">
-                    <div class="mb-3 w-100" style="aspect-ratio: 1/1;">
-                        <img src="images/royal.png" alt="سرویس قابلمه 15 پارچه Royal" class="img-fluid w-100 h-100" style="object-fit: contain;">
-                    </div>
-                    <h3 class="h6 fw-bold mb-1">Royal</h3>
-                    <p class="text-muted small mb-0">سرویس ۱۵ پارچه</p>
-                </div>
-            </div>
+          </div>
 
-            <!-- Product Card 3 -->
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover">
-                    <div class="mb-3 w-100" style="aspect-ratio: 1/1;">
-                        <img src="images/kasumi.png" alt="سرویس قابلمه 10 پارچه Kasumi" class="img-fluid w-100 h-100" style="object-fit: contain;">
-                    </div>
-                    <h3 class="h6 fw-bold mb-1">Kasumi</h3>
-                    <p class="text-muted small mb-0">سرویس ۱۰ پارچه</p>
-                </div>
+          <!-- Product Card 2 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img
+                  src="images/cookware.png"
+                  alt="سرویس قابلمه 11 پارچه گلکسی طلایی"
+                />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">Galaxy Series</h3>
+              <p class="text-muted small mb-0">سرویس ۱۱ پارچه (طلایی)</p>
             </div>
+          </div>
 
-            <!-- Product Card 4 -->
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover">
-                    <div class="mb-3 w-100" style="aspect-ratio: 1/1;">
-                        <img src="images/granite.png" alt="سرویس قابلمه 7 پارچه Granite" class="img-fluid w-100 h-100" style="object-fit: contain;">
-                    </div>
-                    <h3 class="h6 fw-bold mb-1">Granite</h3>
-                    <p class="text-muted small mb-0">سرویس ۷ پارچه</p>
-                </div>
+          <!-- Product Card 3 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img
+                  src="images/cookware.png"
+                  alt="سرویس قابلمه 11 پارچه گلکسی ماربل کرم"
+                />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">Galaxy Series</h3>
+              <p class="text-muted small mb-0">سرویس ۱۱ پارچه (ماربل کرم)</p>
             </div>
+          </div>
 
-            <!-- Product Card 5 -->
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover">
-                    <div class="mb-3 w-100" style="aspect-ratio: 1/1;">
-                        <img src="images/eseries.png" alt="سرویس قابلمه 6 پارچه E Series" class="img-fluid w-100 h-100" style="object-fit: contain;">
-                    </div>
-                    <h3 class="h6 fw-bold mb-1">E Series</h3>
-                    <p class="text-muted small mb-0">سرویس ۶ پارچه</p>
-                </div>
+          <!-- Product Card 4 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img
+                  src="images/cookware.png"
+                  alt="سرویس قابلمه 11 پارچه گلکسی سبز"
+                />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">Galaxy Series</h3>
+              <p class="text-muted small mb-0">سرویس ۱۱ پارچه (سبز)</p>
             </div>
+          </div>
 
+          <!-- Product Card 5 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img
+                  src="images/cookware.png"
+                  alt="سرویس قابلمه 11 پارچه گلکسی قرمز"
+                />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">Galaxy Series</h3>
+              <p class="text-muted small mb-0">سرویس ۱۱ پارچه (قرمز)</p>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- 4. Metal Section -->
-    <section id="metal-products" class="container mb-5" style="scroll-margin-top: 120px;">
-        <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2">
-            <h2 class="h4 fw-bold mb-0">محصولات سرویس فلزی</h2>
-            <a href="#" class="text-primary-green text-decoration-none small fw-bold">مشاهده همه <i class="bi bi-arrow-left ms-1"></i></a>
+      </section>
+      <!-- 4. Metal Section -->
+      <!-- 4. Metal Section -->
+      <section
+        id="metal-products"
+        class="container mb-5"
+        style="scroll-margin-top: 120px"
+      >
+        <div
+          class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2"
+        >
+          <h2 class="h4 fw-bold mb-0">محصولات سرویس فلزی</h2>
+          <a
+            href="#"
+            class="text-primary-green text-decoration-none small fw-bold transition-smooth hover-scale"
+          >
+            مشاهده همه <i class="bi bi-arrow-left ms-1"></i>
+          </a>
         </div>
+
         <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4">
-            <!-- برای جلوگیری از طولانی شدن کد، ساختار کارت‌های این بخش مشابه بالا است -->
-            <!-- می‌توانید کارت‌های بخش قابلمه را کپی کرده و عکس و متن را تغییر دهید -->
-        </div>
-    </section>
+          <!-- Metal Card 1 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img src="images/metal-category.png" alt="ROYAL Collection" />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">ROYAL Collection</h3>
+              <p class="text-muted small mb-0">
+                سرویس ۱۵+۱ پارچه (در فلزی و استند)
+              </p>
+            </div>
+          </div>
 
-    <!-- 5. Wood Section -->
-    <section id="wood-products" class="container mb-5" style="scroll-margin-top: 120px;">
-        <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2">
-            <h2 class="h4 fw-bold mb-0">محصولات سرویس چوبی</h2>
-            <a href="#" class="text-primary-green text-decoration-none small fw-bold">مشاهده همه <i class="bi bi-arrow-left ms-1"></i></a>
+          <!-- Metal Card 2 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img src="images/metal-category.png" alt="TIME Collection" />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">TIME Collection</h3>
+              <p class="text-muted small mb-0">
+                سرویس ۱۵+۱ پارچه (در فلزی و استند)
+              </p>
+            </div>
+          </div>
+
+          <!-- Metal Card 3 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img src="images/metal-category.png" alt="LOVE Collection" />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">LOVE Collection</h3>
+              <p class="text-muted small mb-0">
+                سرویس ۱۵+۱ پارچه (در فلزی و استند)
+              </p>
+            </div>
+          </div>
+
+          <!-- Metal Card 4 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img src="images/metal-category.png" alt="MARBLE Collection" />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">MARBLE Collection</h3>
+              <p class="text-muted small mb-0">
+                سرویس ۱۵+۱ پارچه (در فلزی و استند)
+              </p>
+            </div>
+          </div>
+
+          <!-- Metal Card 5 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img src="images/metal-category.png" alt="MAJOR Collection" />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">MAJOR Collection</h3>
+              <p class="text-muted small mb-0">
+                سرویس ۱۵+۱ پارچه (در فلزی و استند)
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- 5. Wood Section -->
+      <section
+        id="wood-products"
+        class="container mb-5"
+        style="scroll-margin-top: 120px"
+      >
+        <div
+          class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2"
+        >
+          <h2 class="h4 fw-bold mb-0">محصولات سرویس چوبی</h2>
+          <a
+            href="#"
+            class="text-primary-green text-decoration-none small fw-bold transition-smooth hover-scale"
+          >
+            مشاهده همه <i class="bi bi-arrow-left ms-1"></i>
+          </a>
+        </div>
+
         <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4">
-            <!-- کارت‌های چوبی در اینجا قرار می‌گیرند -->
-        </div>
-    </section>
+          <!-- Wood Card 1 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img src="images/wood-category.png" alt="TIME Collection" />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">TIME Collection</h3>
+              <p class="text-muted small mb-0">
+                سرویس ۱۵ پارچه (در چوبی مگنتی)
+              </p>
+            </div>
+          </div>
 
-    <!-- 6. Why Us Section -->
-    <section class="bg-cream-section py-5 mb-5">
+          <!-- Wood Card 2 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img src="images/wood-category.png" alt="DREAM Collection" />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">DREAM Collection</h3>
+              <p class="text-muted small mb-0">
+                سرویس ۱۵ پارچه (در چوبی مگنتی)
+              </p>
+            </div>
+          </div>
+
+          <!-- Wood Card 3 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img src="images/wood-category.png" alt="CHEF Collection" />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">CHEF Collection</h3>
+              <p class="text-muted small mb-0">
+                سرویس ۱۵ پارچه (در چوبی مگنتی)
+              </p>
+            </div>
+          </div>
+
+          <!-- Wood Card 4 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img src="images/wood-category.png" alt="MARBLE Collection" />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">MARBLE Collection</h3>
+              <p class="text-muted small mb-0">
+                سرویس ۱۵ پارچه (در چوبی مگنتی)
+              </p>
+            </div>
+          </div>
+
+          <!-- Wood Card 5 -->
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 transition-smooth product-card-hover"
+            >
+              <div class="product-img-wrapper">
+                <img src="images/wood-category.png" alt="FANCY Collection" />
+              </div>
+              <h3 class="h6 fw-bold mb-1 mt-0">FANCY Collection</h3>
+              <p class="text-muted small mb-0">
+                سرویس ۱۵ پارچه (در چوبی مگنتی)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Why Us Section -->
+      <section class="bg-cream-section py-5 mb-5">
         <div class="container text-center">
-            <h2 class="h4 fw-bold mb-5">چرا صنعت بایگان؟</h2>
-            <div class="row g-4">
-                <div class="col-12 col-md-3">
-                    <i class="bi bi-shield-check text-primary-green fs-1 mb-3 d-block"></i>
-                    <h3 class="h6 fw-bold">پوشش مقاوم و بادوام</h3>
-                    <p class="text-muted small">استفاده از بهترین پوشش‌ها برای ماندگاری بیشتر</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <i class="bi bi-gem text-primary-green fs-1 mb-3 d-block"></i>
-                    <h3 class="h6 fw-bold">کیفیت برتر</h3>
-                    <p class="text-muted small">تولید با بهترین مواد اولیه و کنترل کیفیت دقیق</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <i class="bi bi-tools text-primary-green fs-1 mb-3 d-block"></i>
-                    <h3 class="h6 fw-bold">طراحی کاربردی</h3>
-                    <p class="text-muted small">طراحی زیبا و کاربردی برای استفاده روزمره</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <i class="bi bi-headset text-primary-green fs-1 mb-3 d-block"></i>
-                    <h3 class="h6 fw-bold">پشتیبانی و خدمات</h3>
-                    <p class="text-muted small">پشتیبانی و خدمات پس از فروش سریع و مطمئن</p>
-                </div>
+          <h2 class="h4 fw-bold mb-5">چرا صنعت بایگان؟</h2>
+          <div class="row g-4">
+            <div class="col-12 col-md-3">
+              <i
+                class="bi bi-shield-check text-primary-green fs-1 mb-3 d-block"
+              ></i>
+              <h3 class="h6 fw-bold">پوشش مقاوم و بادوام</h3>
+              <p class="text-muted small">
+                استفاده از بهترین پوشش‌ها برای ماندگاری بیشتر
+              </p>
             </div>
+            <div class="col-12 col-md-3">
+              <i class="bi bi-gem text-primary-green fs-1 mb-3 d-block"></i>
+              <h3 class="h6 fw-bold">کیفیت برتر</h3>
+              <p class="text-muted small">
+                تولید با بهترین مواد اولیه و کنترل کیفیت دقیق
+              </p>
+            </div>
+            <div class="col-12 col-md-3">
+              <i class="bi bi-tools text-primary-green fs-1 mb-3 d-block"></i>
+              <h3 class="h6 fw-bold">طراحی کاربردی</h3>
+              <p class="text-muted small">
+                طراحی زیبا و کاربردی برای استفاده روزمره
+              </p>
+            </div>
+            <div class="col-12 col-md-3">
+              <i class="bi bi-headset text-primary-green fs-1 mb-3 d-block"></i>
+              <h3 class="h6 fw-bold">پشتیبانی و خدمات</h3>
+              <p class="text-muted small">
+                پشتیبانی و خدمات پس از فروش سریع و مطمئن
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- 7. Catalog Download Section -->
-    <section class="container mb-5 pb-5">
+      <!-- 7. Catalog Download Section -->
+      <section class="container mb-5 pb-5">
         <div class="text-center mb-5">
-            <h2 class="h4 fw-bold">دانلود کاتالوگ محصولات</h2>
+          <h2 class="h4 fw-bold">دانلود کاتالوگ محصولات</h2>
         </div>
         <div class="row g-4 justify-content-center">
-            <div class="col-12 col-md-4">
-                <a href="catalog/wood.pdf" class="text-decoration-none text-dark" download>
-                    <div class="card h-100 border-0 bg-cream-section rounded-4 d-flex flex-row align-items-center p-3 transition-smooth product-card-hover">
-                        <div class="me-3 ms-2">
-                            <i class="bi bi-download text-primary-green fs-3"></i>
-                        </div>
-                        <div>
-                            <h3 class="h6 fw-bold mb-1">سرویس چوبی</h3>
-                            <p class="text-muted small mb-0">دانلود کاتالوگ PDF</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-4">
-                <a href="catalog/metal.pdf" class="text-decoration-none text-dark" download>
-                    <div class="card h-100 border-0 bg-cream-section rounded-4 d-flex flex-row align-items-center p-3 transition-smooth product-card-hover">
-                        <div class="me-3 ms-2">
-                            <i class="bi bi-download text-primary-green fs-3"></i>
-                        </div>
-                        <div>
-                            <h3 class="h6 fw-bold mb-1">سرویس فلزی</h3>
-                            <p class="text-muted small mb-0">دانلود کاتالوگ PDF</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-4">
-                <a href="catalog/pots.pdf" class="text-decoration-none text-dark" download>
-                    <div class="card h-100 border-0 bg-cream-section rounded-4 d-flex flex-row align-items-center p-3 transition-smooth product-card-hover">
-                        <div class="me-3 ms-2">
-                            <i class="bi bi-download text-primary-green fs-3"></i>
-                        </div>
-                        <div>
-                            <h3 class="h6 fw-bold mb-1">سرویس قابلمه</h3>
-                            <p class="text-muted small mb-0">دانلود کاتالوگ PDF</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+          <div class="col-12 col-md-4">
+            <a
+              href="catalog/wood.pdf"
+              class="text-decoration-none text-dark"
+              download
+            >
+              <div
+                class="card h-100 border-0 bg-cream-section rounded-4 d-flex flex-row align-items-center p-3 transition-smooth product-card-hover"
+              >
+                <div class="me-3 ms-2">
+                  <i class="bi bi-download text-primary-green fs-3"></i>
+                </div>
+                <div>
+                  <h3 class="h6 fw-bold mb-1">سرویس چوبی</h3>
+                  <p class="text-muted small mb-0">دانلود کاتالوگ PDF</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a
+              href="catalog/metal.pdf"
+              class="text-decoration-none text-dark"
+              download
+            >
+              <div
+                class="card h-100 border-0 bg-cream-section rounded-4 d-flex flex-row align-items-center p-3 transition-smooth product-card-hover"
+              >
+                <div class="me-3 ms-2">
+                  <i class="bi bi-download text-primary-green fs-3"></i>
+                </div>
+                <div>
+                  <h3 class="h6 fw-bold mb-1">سرویس فلزی</h3>
+                  <p class="text-muted small mb-0">دانلود کاتالوگ PDF</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a
+              href="catalog/pots.pdf"
+              class="text-decoration-none text-dark"
+              download
+            >
+              <div
+                class="card h-100 border-0 bg-cream-section rounded-4 d-flex flex-row align-items-center p-3 transition-smooth product-card-hover"
+              >
+                <div class="me-3 ms-2">
+                  <i class="bi bi-download text-primary-green fs-3"></i>
+                </div>
+                <div>
+                  <h3 class="h6 fw-bold mb-1">سرویس قابلمه</h3>
+                  <p class="text-muted small mb-0">دانلود کاتالوگ PDF</p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-    </section>
-</main>
+      </section>
+    </main>
 
-      <!-- Global Footer -->
-<footer class="pt-4 pb-3 mt-5">
-    <div class="container">
+    <!-- Global Footer -->
+    <footer class="pt-4 pb-3 mt-5">
+      <div class="container">
         <div class="row g-4" dir="rtl">
-            
-            <!-- ستون اول (راست): لوگو و شبکه‌های اجتماعی -->
-            <!-- در موبایل وسط‌چین و در دسکتاپ راست‌چین -->
-            <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
-                <div class="d-flex flex-column flex-md-row align-items-center mb-3">
-                    <img src="images/logohigh.png" alt="لوگو صنعت بایگان آریا" height="60" class="ms-md-3 mb-2 mb-md-0" style="filter: brightness(0) invert(1);">
-                    <div>
-                        <h4 class="h5 fw-bold mb-1 text-white">صنعت بایگان آریا</h4>
-                        <p class="small text-white-50 mb-0" style="font-size: 0.85rem;">تولید کننده محصولات آشپزخانه<br>و تجهیزات بایگانی</p>
-                    </div>
-                </div>
-                
-                <div class="d-flex gap-3 justify-content-center justify-content-md-start">
-                    <!-- این دیو خالی فقط در دسکتاپ دیده می‌شود تا آیکون‌ها را دقیقاً زیر متن هل دهد -->
-                    <div class="d-none d-md-block" style="width: 75px;"></div>
-                    <a href="#" class="footer-social-link">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
-                    <a href="#" class="footer-social-link">
-                        <i class="bi bi-telegram"></i>
-                    </a>
-                    <a href="#" class="footer-social-link">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                </div>
+          <!-- ستون اول (راست): لوگو و شبکه‌های اجتماعی -->
+          <!-- در موبایل وسط‌چین و در دسکتاپ راست‌چین -->
+          <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+            <div class="d-flex flex-column flex-md-row align-items-center mb-3">
+              <img
+                src="images/logohigh.png"
+                alt="لوگو صنعت بایگان آریا"
+                height="60"
+                class="ms-md-3 mb-2 mb-md-0"
+                style="filter: brightness(0) invert(1)"
+              />
+              <div>
+                <h4 class="h5 fw-bold mb-1 text-white">صنعت بایگان آریا</h4>
+                <p class="small text-white-50 mb-0" style="font-size: 0.85rem">
+                  تولید کننده محصولات آشپزخانه<br />و تجهیزات بایگانی
+                </p>
+              </div>
             </div>
 
-            <!-- ستون دوم: کارخانه و دفتر مرکزی -->
-            <!-- راست‌چین استاندارد برای حفظ نظم عمودی آیکون‌ها در موبایل -->
-            <div class="col-12 col-md-6 col-lg-4 text-start">
-                <h4 class="h6 fw-bold mb-3 text-white">کارخانه و دفتر مرکزی</h4>
-                <ul class="list-unstyled mb-0">
-                    <li class="mb-2 d-flex align-items-start text-white">
-                        <i class="bi bi-geo-alt fs-5 ms-2 mt-1"></i>
-                        <span class="small" style="font-size: 0.75rem;">تهران، جاده خاوران، روبه‌روی فرون‌آباد، جنب باسکول آلمانی، خیابان امام حسین (ع)، بعد از بن‌بست دوم، درب بزرگ آبی‌رنگ</span>
-                    </li>
-                    <li class="mb-2 d-flex align-items-center text-white">
-                        <i class="bi bi-telephone fs-5 ms-2"></i>
-                        <span dir="ltr" class="small">021 - 36849166</span>
-                    </li>
-                    <li class="mb-2 d-flex align-items-center text-white">
-                        <i class="bi bi-printer fs-5 ms-2"></i>
-                        <span dir="ltr" class="small">021 - 36849257</span>
-                    </li>
-                    <li class="mb-2 d-flex align-items-center text-white">
-                        <i class="bi bi-phone fs-5 ms-2"></i>
-                        <span dir="ltr" class="small">0912 - 3244197 | 0912 - 5375404</span>
-                    </li>
-                </ul>
+            <div
+              class="d-flex gap-3 justify-content-center justify-content-md-start"
+            >
+              <!-- این دیو خالی فقط در دسکتاپ دیده می‌شود تا آیکون‌ها را دقیقاً زیر متن هل دهد -->
+              <div class="d-none d-md-block" style="width: 75px"></div>
+              <a href="#" class="footer-social-link">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="#" class="footer-social-link">
+                <i class="bi bi-telegram"></i>
+              </a>
+              <a href="#" class="footer-social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
             </div>
+          </div>
 
-            <!-- ستون سوم: محصولات -->
-            <!-- استفاده از col-6 برای اختصاص ۵۰٪ عرض در موبایل (کنار ستون بعدی قرار می‌گیرد) -->
-            <div class="col-6 col-md-6 col-lg-2 text-start">
-                <h4 class="h6 fw-bold mb-3 text-white">محصولات</h4>
-                <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><a href="#" class="small text-white text-decoration-none">سرویس قابلمه</a></li>
-                    <li class="mb-2"><a href="#" class="small text-white text-decoration-none">سرویس فلزی</a></li>
-                    <li class="mb-2"><a href="#" class="small text-white text-decoration-none">سرویس چوبی</a></li>
-                </ul>
-            </div>
+          <!-- ستون دوم: کارخانه و دفتر مرکزی -->
+          <!-- راست‌چین استاندارد برای حفظ نظم عمودی آیکون‌ها در موبایل -->
+          <div class="col-12 col-md-6 col-lg-4 text-start">
+            <h4 class="h6 fw-bold mb-3 text-white">کارخانه و دفتر مرکزی</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2 d-flex align-items-start text-white">
+                <i class="bi bi-geo-alt fs-5 ms-2 mt-1"></i>
+                <span class="small" style="font-size: 0.75rem"
+                  >تهران، جاده خاوران، روبه‌روی فرون‌آباد، جنب باسکول آلمانی،
+                  خیابان امام حسین (ع)، بعد از بن‌بست دوم، درب بزرگ
+                  آبی‌رنگ</span
+                >
+              </li>
+              <li class="mb-2 d-flex align-items-center text-white">
+                <i class="bi bi-telephone fs-5 ms-2"></i>
+                <span dir="ltr" class="small">021 - 36849166</span>
+              </li>
+              <li class="mb-2 d-flex align-items-center text-white">
+                <i class="bi bi-printer fs-5 ms-2"></i>
+                <span dir="ltr" class="small">021 - 36849257</span>
+              </li>
+              <li class="mb-2 d-flex align-items-center text-white">
+                <i class="bi bi-phone fs-5 ms-2"></i>
+                <span dir="ltr" class="small"
+                  >0912 - 3244197 | 0912 - 5375404</span
+                >
+              </li>
+            </ul>
+          </div>
 
-            <!-- ستون چهارم (چپ): دسترسی سریع -->
-            <!-- استفاده از col-6 برای اختصاص ۵۰٪ عرض در موبایل -->
-            <div class="col-6 col-md-6 col-lg-2 text-start">
-                <h4 class="h6 fw-bold mb-3 text-white">دسترسی سریع</h4>
-                <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><a href="#" class="small text-white text-decoration-none">صفحه اصلی</a></li>
-                    <li class="mb-2"><a href="#" class="small text-white text-decoration-none">محصولات آشپزخانه</a></li>
-                    <li class="mb-2"><a href="#" class="small text-white text-decoration-none">تجهیزات بایگانی</a></li>
-                    <li class="mb-2"><a href="#" class="small text-white text-decoration-none">درباره ما</a></li>
-                    <li class="mb-2"><a href="#" class="small text-white text-decoration-none">تماس با ما</a></li>
-                </ul>
-            </div>
+          <!-- ستون سوم: محصولات -->
+          <!-- استفاده از col-6 برای اختصاص ۵۰٪ عرض در موبایل (کنار ستون بعدی قرار می‌گیرد) -->
+          <div class="col-6 col-md-6 col-lg-2 text-start">
+            <h4 class="h6 fw-bold mb-3 text-white">محصولات</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >سرویس قابلمه</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >سرویس فلزی</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >سرویس چوبی</a
+                >
+              </li>
+            </ul>
+          </div>
 
+          <!-- ستون چهارم (چپ): دسترسی سریع -->
+          <!-- استفاده از col-6 برای اختصاص ۵۰٪ عرض در موبایل -->
+          <div class="col-6 col-md-6 col-lg-2 text-start">
+            <h4 class="h6 fw-bold mb-3 text-white">دسترسی سریع</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a
+                  href="index.html"
+                  class="small text-white text-decoration-none"
+                  >صفحه اصلی</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >محصولات آشپزخانه</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >تجهیزات بایگانی</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >درباره ما</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >تماس با ما</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <hr class="my-3 border-white opacity-25">
+        <hr class="my-3 border-white opacity-25" />
 
         <!-- کپی‌رایت -->
-        <div class="text-center text-white-50 small pb-2" dir="ltr" style="font-size: 0.8rem;">
-            © 2026 Sanat Baygan Aria. All Rights Reserved.
+        <div
+          class="text-center text-white-50 small pb-2"
+          dir="ltr"
+          style="font-size: 0.8rem"
+        >
+          © 2026 Sanat Baygan Aria. All Rights Reserved.
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      // بستن خودکار منوی همبرگری در موبایل پس از کلیک روی لینک‌ها
-      document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
-        link.addEventListener("click", () => {
-          const navbarCollapse = document.querySelector(".navbar-collapse");
-          // بررسی می‌کند که اگر منو باز است (کلاس show دارد) آن را ببندد
-          if (navbarCollapse.classList.contains("show")) {
-            document.querySelector(".navbar-toggler").click();
-          }
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarCollapse = document.getElementById("navbarNav");
+
+        // بررسی می‌کنیم که آیا بوت‌استرپ کاملاً لود شده است یا خیر
+        if (navbarCollapse && typeof bootstrap !== "undefined") {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false,
+          });
+
+          document.querySelectorAll(".navbar-nav a").forEach((link) => {
+            link.addEventListener("click", () => {
+              // اگر منو در حال نمایش است، آن را به طور مستقیم با دستور رسمی بوت‌استرپ ببند
+              if (navbarCollapse.classList.contains("show")) {
+                bsCollapse.hide();
+              }
+            });
+          });
+        }
       });
     </script>
   </body>
