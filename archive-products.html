@@ -154,7 +154,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">درباره ما</a>
+                <a class="nav-link" href="about.html">درباره ما</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">تماس با ما</a>
@@ -177,7 +177,7 @@
 
     <main>
       <!-- Hero Section مخصوص صفحه بایگانی -->
-      <section class="position-relative mb-5 bg-white">
+      <section class="position-relative mb-4 bg-white">
         <picture>
           <source
             media="(max-width: 768px)"
@@ -185,7 +185,7 @@
           />
           <!-- تصویر دسکتاپ را می‌توانید همان تصویر اسلایدر اصلی تنظیم کنید -->
           <img
-            src="images/hero-baygan-desktop.png"
+            src="images/products-baygan2.png"
             alt="تجهیزات بایگانی و فایلینگ اداری مدرن"
             class="w-100 object-fit-cover"
             style="height: 40vh; min-height: 300px"
@@ -199,7 +199,7 @@
         <div class="position-absolute top-0 start-0 w-100 h-100">
           <!-- قرارگیری در پایین (align-items-end) و سمت چپ (justify-content-end) -->
           <div
-            class="container h-100 d-flex align-items-end justify-content-end pb-3"
+            class="container h-100 d-flex align-items-end justify-content-start pb-3"
           >
             <!-- باکس متنی با پس‌زمینه کمرنگ (نیمه‌شفاف) -->
             <div
@@ -210,7 +210,9 @@
                 backdrop-filter: blur(4px);
               "
             >
-              <h1 class="fw-bold mb-2 display-6 text-primary-green">تجهیزات بایگانی</h1>
+              <h1 class="fw-bold mb-2 display-6 text-primary-green">
+                تجهیزات بایگانی
+              </h1>
               <p class="text-muted small mb-0 lh-lg">
                 محصولاتی با کیفیت <br />برای فضاهای اداری و صنعتی
               </p>
@@ -218,13 +220,21 @@
           </div>
         </div>
       </section>
+      <div class="text-center mb-4">
+        <h2 class="h4 fw-bold">لیست محصولات بایگانی</h2>
+      </div>
       <!-- 1. کمد بایگانی ریلی (4 ستونه) -->
       <section id="mobile-archive" class="container mb-5">
         <div
           class="d-flex justify-content-between align-items-end mb-3 border-bottom pb-2"
         >
           <div>
-            <h2 class="h4 fw-bold mb-2 text-dark">کمد بایگانی ریلی</h2>
+            <h2
+              class="h4 fw-bold mb-2 text-dark ps-3"
+              style="border-right: 4px solid #acd783; border-left: none"
+            >
+              کمد بایگانی ریلی
+            </h2>
             <p class="text-muted small mb-0 d-none d-sm-block">
               راهکاری منظم و بهینه برای نگهداری و دسترسی سریع به اسناد
             </p>
@@ -328,7 +338,12 @@
         >
           <!-- این div عنوان و زیرعنوان را در یک ستون نگه می‌دارد -->
           <div>
-            <h2 class="h4 fw-bold mb-1 text-dark">کمد دوار</h2>
+            <h2
+              class="h4 fw-bold mb-2 text-dark ps-3"
+              style="border-right: 4px solid #acd783; border-left: none"
+            >
+              کمد دوار
+            </h2>
             <p class="text-muted small mb-0 d-none d-sm-block">
               دسترسی سریع و صرفه‌جویی حداکثری در فضای بایگانی زونکن و پوشه‌ها
             </p>
@@ -427,15 +442,28 @@
 
       <!-- 3. فایل‌ها (5 ستونه) -->
       <section id="filing-cabinets" class="container mb-5">
-        <div class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-2">
-  <!-- این div عنوان و زیرعنوان را در یک ستون نگه می‌دارد -->
-  <div>
-    <h2 class="h4 fw-bold mb-1 text-dark">فایل‌ها</h2>
-    <p class="text-muted small mb-0 d-none d-sm-block">طبقه‌بندی امن و تفکیک‌شده برای اسناد کاغذی، پرونده‌ها و نقشه‌ها</p>
-  </div>
-  
-  <a href="#" class="text-primary-green text-decoration-none small fw-bold d-none d-md-block">مشاهده همه <i class="bi bi-arrow-left ms-1"></i></a>
-</div>
+        <div
+          class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-2"
+        >
+          <!-- این div عنوان و زیرعنوان را در یک ستون نگه می‌دارد -->
+          <div>
+            <h2
+              class="h4 fw-bold mb-2 text-dark ps-3"
+              style="border-right: 4px solid #acd783; border-left: none"
+            >
+              فایل‌ها
+            </h2>
+            <p class="text-muted small mb-0 d-none d-sm-block">
+              طبقه‌بندی امن و تفکیک‌شده برای اسناد کاغذی، پرونده‌ها و نقشه‌ها
+            </p>
+          </div>
+
+          <a
+            href="#"
+            class="text-primary-green text-decoration-none small fw-bold d-none d-md-block"
+            >مشاهده همه <i class="bi bi-arrow-left ms-1"></i
+          ></a>
+        </div>
         <!-- 5 Columns on Desktop -->
         <div
           class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center"
@@ -550,7 +578,12 @@
         >
           <!-- این div عنوان و زیرعنوان را در یک ستون نگه می‌دارد -->
           <div>
-            <h2 class="h4 fw-bold mb-1 text-dark">کمد رختکن</h2>
+            <h2
+              class="h4 fw-bold mb-2 text-dark ps-3"
+              style="border-right: 4px solid #acd783; border-left: none"
+            >
+              کمد رختکن
+            </h2>
             <p class="text-muted small mb-0 d-none d-sm-block">
               حفظ امنیت و نظم لوازم شخصی پرسنل در محیط‌های کاری و ورزشی
             </p>
@@ -670,15 +703,28 @@
 
       <!-- 5. کمدهای تخصصی -->
       <section id="specialty-cabinets" class="container mb-5">
-       <div class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-2">
-  <!-- این div عنوان و زیرعنوان را در یک ستون نگه می‌دارد -->
-  <div>
-    <h2 class="h4 fw-bold mb-1 text-dark">کمدهای تخصصی</h2>
-    <p class="text-muted small mb-0 d-none d-sm-block">راهکارهای سفارشی و ایمن برای نگهداری ابزار، تجهیزات و لوازم خاص</p>
-  </div>
-  
-  <a href="#" class="text-primary-green text-decoration-none small fw-bold d-none d-md-block">مشاهده همه <i class="bi bi-arrow-left ms-1"></i></a>
-</div>
+        <div
+          class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-2"
+        >
+          <!-- این div عنوان و زیرعنوان را در یک ستون نگه می‌دارد -->
+          <div>
+            <h2
+              class="h4 fw-bold mb-2 text-dark ps-3"
+              style="border-right: 4px solid #acd783; border-left: none"
+            >
+              کمدهای تخصصی
+            </h2>
+            <p class="text-muted small mb-0 d-none d-sm-block">
+              راهکارهای سفارشی و ایمن برای نگهداری ابزار، تجهیزات و لوازم خاص
+            </p>
+          </div>
+
+          <a
+            href="#"
+            class="text-primary-green text-decoration-none small fw-bold d-none d-md-block"
+            >مشاهده همه <i class="bi bi-arrow-left ms-1"></i
+          ></a>
+        </div>
         <!-- کلاس row-cols-lg-4 باعث ایجاد ساختار ۴ و ۲ (وسط‌چین) می‌شود -->
         <div
           class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center"
@@ -802,15 +848,29 @@
       </section>
       <!-- 6. قفسه‌بندی (مستقل) -->
       <section id="shelving" class="container mb-5">
-        <div class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-2">
-  <!-- این div عنوان و زیرعنوان را در یک ستون نگه می‌دارد -->
-  <div>
-    <h2 class="h4 fw-bold mb-1 text-dark">قفسه‌بندی</h2>
-    <p class="text-muted small mb-0 d-none d-sm-block">سیستم‌های طبقه‌بندی مقاوم برای فروشگاه‌ها، بایگانی‌ها و انبارهای صنعتی</p>
-  </div>
-  
-  <a href="#" class="text-primary-green text-decoration-none small fw-bold d-none d-md-block">مشاهده همه <i class="bi bi-arrow-left ms-1"></i></a>
-</div>
+        <div
+          class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-2"
+        >
+          <!-- این div عنوان و زیرعنوان را در یک ستون نگه می‌دارد -->
+          <div>
+            <h2
+              class="h4 fw-bold mb-2 text-dark ps-3"
+              style="border-right: 4px solid #acd783; border-left: none"
+            >
+              قفسه‌بندی
+            </h2>
+            <p class="text-muted small mb-0 d-none d-sm-block">
+              سیستم‌های طبقه‌بندی مقاوم برای فروشگاه‌ها، بایگانی‌ها و انبارهای
+              صنعتی
+            </p>
+          </div>
+
+          <a
+            href="#"
+            class="text-primary-green text-decoration-none small fw-bold d-none d-md-block"
+            >مشاهده همه <i class="bi bi-arrow-left ms-1"></i
+          ></a>
+        </div>
         <!-- استفاده از همان گرید ۵ ستونه برای حفظ یکپارچگی، آیتم‌ها وسط‌چین می‌شوند -->
         <div
           class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center"
@@ -880,15 +940,28 @@
 
       <!-- 7. ملزومات و لوازم جانبی بایگانی -->
       <section id="accessories" class="container mb-5">
-        <div class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-2">
-  <!-- این div عنوان و زیرعنوان را در یک ستون نگه می‌دارد -->
-  <div>
-    <h2 class="h4 fw-bold mb-1 text-dark">ملزومات و لوازم جانبی بایگانی</h2>
-    <p class="text-muted small mb-0 d-none d-sm-block">تجهیزات تکمیلی برای سازماندهی بهتر و دسترسی آسان‌تر به پرونده‌ها</p>
-  </div>
-  
-  <a href="#" class="text-primary-green text-decoration-none small fw-bold d-none d-md-block">مشاهده همه <i class="bi bi-arrow-left ms-1"></i></a>
-</div>
+        <div
+          class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-2"
+        >
+          <!-- این div عنوان و زیرعنوان را در یک ستون نگه می‌دارد -->
+          <div>
+            <h2
+              class="h4 fw-bold mb-2 text-dark ps-3"
+              style="border-right: 4px solid #acd783; border-left: none"
+            >
+              ملزومات و لوازم جانبی بایگانی
+            </h2>
+            <p class="text-muted small mb-0 d-none d-sm-block">
+              تجهیزات تکمیلی برای سازماندهی بهتر و دسترسی آسان‌تر به پرونده‌ها
+            </p>
+          </div>
+
+          <a
+            href="#"
+            class="text-primary-green text-decoration-none small fw-bold d-none d-md-block"
+            >مشاهده همه <i class="bi bi-arrow-left ms-1"></i
+          ></a>
+        </div>
         <div
           class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center"
         >
@@ -996,8 +1069,7 @@
               class="text-decoration-none text-dark d-block h-100"
               download
             >
-
-               <div
+              <div
                 class="card h-100 border-0 bg-cream-section rounded-4 d-flex flex-row align-items-center p-3 transition-smooth product-card-hover"
               >
                 <div class="me-3 ms-2">
@@ -1131,7 +1203,9 @@
             <h4 class="h6 fw-bold mb-3 text-white">دسترسی سریع</h4>
             <ul class="list-unstyled mb-0">
               <li class="mb-2">
-                <a href="#" class="small text-white text-decoration-none"
+                <a
+                  href="index.html"
+                  class="small text-white text-decoration-none"
                   >صفحه اصلی</a
                 >
               </li>
@@ -1143,12 +1217,14 @@
                 >
               </li>
               <li class="mb-2">
-                <a href="#" class="small text-white text-decoration-none"
+                <a
+                  href="archive-products.html"
+                  class="small text-white text-decoration-none"
                   >تجهیزات بایگانی</a
                 >
               </li>
               <li class="mb-2">
-                <a href="#" class="small text-white text-decoration-none"
+                <a href="about.html" class="small text-white text-decoration-none"
                   >درباره ما</a
                 >
               </li>

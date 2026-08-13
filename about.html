@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      صنعت بایگان آریا | تولیدکننده محصولات آشپزخانه و تجهیزات بایگانی
+    </title>
+    <meta
+      name="description"
+      content="شرکت صنعت بایگان آریا، تولیدکننده برتر انواع تجهیزات بایگانی مدرن، سیستم‌های قفسه‌بندی اداری و محصولات لوکس و مدرن آشپزخانه با بالاترین کیفیت و استانداردها."
+    />
+    <meta
+      name="keywords"
+      content="صنعت بایگان آریا, تجهیزات بایگانی, محصولات آشپزخانه, قفسه بندی ریلی, کمد اداری, اکسسوری آشپزخانه"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sanatbaygan.com/" />
+    <meta
+      property="og:title"
+      content="صنعت بایگان آریا | تولیدکننده محصولات آشپزخانه و تجهیزات بایگانی"
+    />
+    <meta
+      property="og:description"
+      content="تولیدکننده برتر انواع تجهیزات بایگانی مدرن و محصولات لوکس و مدرن آشپزخانه با بالاترین کیفیت."
+    />
+    <meta property="og:image" content="assets/images/og-image.webp" />
+
+    <!-- Bootstrap 5 RTL CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="index-fa.html"
+          >
+            <img
+              src="images/logohigh.png"
+              alt="لوگو صنعت بایگان آریا"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+
+          <!-- باکس دکمه‌های مخصوص موبایل (تماس مستقیم + منوی همبرگری) -->
+          <div class="d-flex align-items-center d-lg-none">
+            <!-- دکمه تماس تلفنی (فقط در موبایل نمایش داده می‌شود) -->
+            <a
+              href="tel:091230600"
+              class="btn btn-category btn-sm rounded-circle d-flex align-items-center justify-content-center mx-2 shadow-sm text-white"
+              style="width: 38px; height: 38px"
+            >
+              <i class="bi bi-telephone-fill fs-6"></i>
+            </a>
+            <a href="#" class="lang-switcher">EN</a>
+
+            <!-- دکمه همبرگری منوی موبایل -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="تغییر وضعیت منو"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">صفحه اصلی</a>
+              </li>
+              <!-- ۱. منوی محصولات مخصوص موبایل و تبلت (بدون زیرمنو، کلیک مستقیم به صفحه) -->
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="kitchen-products.html">
+                  محصولات آشپزخانه
+                </a>
+              </li>
+              <!-- منوی محصولات مخصوص دسکتاپ (بدون تداخل و دراپ‌داون اجباری) -->
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a
+                  class="nav-link"
+                  href="kitchen-products.html"
+                  id="kitchenDropdown"
+                >
+                  محصولات آشپزخانه
+                  <i class="bi bi-chevron-down" style="font-size: 0.75rem"></i>
+                </a>
+                <ul
+                  class="dropdown-menu border-0 shadow-sm py-2"
+                  aria-labelledby="kitchenDropdown"
+                  style="background-color: var(--cream-bg, #fdfbf7)"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item py-2"
+                      href="#pot-products"
+                      style="
+                        text-align: right;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                      "
+                      >سرویس قابلمه</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item py-2"
+                      href="#metal-products"
+                      style="
+                        text-align: right;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                      "
+                      >سرویس فلزی</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item py-2"
+                      href="#wood-products"
+                      style="
+                        text-align: right;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                      "
+                      >سرویس چوبی</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="archive-products.html"
+                  >تجهیزات بایگانی</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">درباره ما</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">تماس با ما</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center gap-3">
+              <a href="#" class="lang-switcher d-none d-lg-block">EN</a>
+              <!-- دکمه تماس نسخه دسکتاپ -->
+              <a
+                href="#contact"
+                class="btn-contact-header d-none d-sm-inline-block"
+              >
+                درخواست مشاوره<i class="bi bi-telephone-fill ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main>
+
+        <!-- 1. هیرو و معرفی شرکت -->
+        <section class="py-3 mt-3">
+            <div class="container">
+                <div class="row g-5 align-items-center flex-column-reverse flex-md-row">
+                    <div class="col-12 col-md-6 text-center text-md-start">
+                        <h1 class="fw-bold mb-3">درباره صنعت بایگان آریا</h1>
+                        
+                        <!-- نگهدارنده فلکس: چیدمان در یک خط -->
+                        <!-- justify-content-md-between شماره ثبت را در دسکتاپ به سمت چپ هل می‌دهد -->
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-between mb-4 gap-3">
+                            <!-- شعار شرکت -->
+                            <h2 class="h5 mb-0" style="color: var(--primary-green-hover);">«با شما برتر هستیم»</h2>
+                            
+                            <!-- شماره ثبت (در سمت چپ شعار) -->
+                            <span class="badge bg-cream-section text-primary-green px-3 py-2 rounded-pill border">شماره ثبت: ۳۶۱۳۳۶</span>
+                        </div>
+                        
+                        <p class="text-muted lh-lg text-justify">
+                            گروه صنعتی ما در سال ۱۳۸۰ توسط <strong>آقای قلی‌بیک و پسرانش</strong>، به عنوان یکی از پیشگامان صنعت لوازم بایگانی و اداری فلزی تأسیس گردید. ما با تکیه بر بیش از دو دهه تجربه، دانش جوانان متخصص این مرز و بوم و بهبود مستمر کیفیت، توانسته‌ایم جایگاهی شایسته و قابل اعتماد در میان سازمان‌ها و ادارات دولتی و خصوصی کسب کنیم. هدف ما همواره طراحی و تولید محصولاتی جدید و درخور شأن شما مشتریان گرامی بوده است، چرا که عمیقاً باور داریم برتری ما در گرو همراهی و رضایت شماست.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <!-- تصویر کارخانه -->
+                        <img src="images/factory.png" alt="کارخانه صنعت بایگان آریا" class="img-fluid rounded-4 shadow-sm w-100" style="object-fit: cover; aspect-ratio: 16/9;">
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+        <!-- 2. گزیده‌ای از مشتریان (اسلایدر متحرک) -->
+        <section class="py-4 mb-3 bg-cream-section">
+            <div class="container pt-3">
+                <!-- عنوان بخش -->
+                <div class="text-center mb-4">
+                    <h2 class="h4 fw-bold mb-0">گزیده‌ای از مشتریان ما</h2>
+                </div>
+
+                <!-- نگهدارنده اسلایدر -->
+                <div class="clients-slider-container mb-4">
+                    <div class="clients-slide-track">
+                        <!-- سری اول عکس‌ها -->
+                        <img src="images/slide-1.jpg" alt="مشتریان صنعت بایگان">
+                        <img src="images/slide-2.jpg" alt="مشتریان صنعت بایگان">
+                        <img src="images/slide-3.jpg" alt="مشتریان صنعت بایگان">
+
+                        <!-- سری دوم عکس‌ها (تکرار دقیق برای حلقه بی‌نهایت) -->
+                        <img src="images/slide-1.jpg" alt="مشتریان صنعت بایگان">
+                        <img src="images/slide-2.jpg" alt="مشتریان صنعت بایگان">
+                        <img src="images/slide-3.jpg" alt="مشتریان صنعت بایگان">
+                    </div>
+                </div>
+                
+                <!-- زیرنویس بخش -->
+                <div class="text-center mb-2">
+                    <p class="text-muted small mb-0">
+                        افتخار همکاری با برترین سازمان‌ها و نهادهای کشور
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. مسیر فعالیت (تایم‌لاین) -->
+        <section class="py-4 my-3">
+            <div class="container py-4">
+                <h2 class="h3 fw-bold text-center mb-5">مسیر رشد و توسعه ما</h2>
+                <div class="row g-4 position-relative">
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="bg-white rounded-circle d-flex align-items-center justify-content-center mx-auto shadow-sm mb-3 text-primary-green fw-bold fs-4" style="width: 80px; height: 80px">
+                            ۱۳۸۰
+                        </div>
+                        <h3 class="h6 fw-bold mb-2">تأسیس مجموعه</h3>
+                        <p class="text-muted small px-3">
+                            آغاز فعالیت با نام «گروه صنعتی صنایع فلزی پارسیان» با هدف طراحی
+                            و نصب سیستم‌های مدرن بایگانی.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="bg-white rounded-circle d-flex align-items-center justify-content-center mx-auto shadow-sm mb-3 text-primary-green fw-bold fs-4" style="width: 80px; height: 80px">
+                            ۱۳۸۸
+                        </div>
+                        <h3 class="h6 fw-bold mb-2">توسعه و تغییر نام</h3>
+                        <p class="text-muted small px-3">
+                            گسترش خطوط تولید و تغییر نام رسمی به «شرکت صنعت بایگان پرتو
+                            آریا» برای حضور قدرتمندتر در بازار.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="bg-primary-green text-white rounded-circle d-flex align-items-center justify-content-center mx-auto shadow-sm mb-3 fw-bold fs-5" style="width: 80px; height: 80px">
+                            امروز
+                        </div>
+                        <h3 class="h6 fw-bold mb-2">صنعت بایگان آریا</h3>
+                        <p class="text-muted small px-3">
+                            بیش از ۲۵ سال تجربه درخشان و ورود به عرصه تولید تجهیزات مدرن
+                            آشپزخانه با بالاترین استانداردها.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. رویکرد و تعهدات -->
+        <section class="bg-cream-section py-5 mb-3">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="h3 fw-bold">تعهدات ما به شما</h2>
+                    <p class="text-muted">
+                        ارزش‌هایی که ما را ملزم به ارائه بهترین‌ها می‌کند
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4 bg-white transition-smooth product-card-hover">
+                            <i class="bi bi-cpu text-primary-green fs-1 mb-3"></i>
+                            <h3 class="h6 fw-bold mb-2">توسعه فناوری</h3>
+                            <p class="text-muted small mb-0">
+                                به‌روزرسانی مستمر و استفاده از آخرین تکنولوژی‌های تولید
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4 bg-white transition-smooth product-card-hover">
+                            <i class="bi bi-patch-check text-primary-green fs-1 mb-3"></i>
+                            <h3 class="h6 fw-bold mb-2">کیفیت و دوام</h3>
+                            <p class="text-muted small mb-0">
+                                تولید محصولاتی مستحکم با عمر مفید بالا برای استفاده طولانی‌مدت
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4 bg-white transition-smooth product-card-hover">
+                            <i class="bi bi-headset text-primary-green fs-1 mb-3"></i>
+                            <h3 class="h6 fw-bold mb-2">خدمات پس از فروش</h3>
+                            <p class="text-muted small mb-0">
+                                پاسخگویی سریع و پشتیبانی قدرتمند از تمامی مشتریان
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4 bg-white transition-smooth product-card-hover">
+                            <i class="bi bi-shield-check text-primary-green fs-1 mb-3"></i>
+                            <h3 class="h6 fw-bold mb-2">گارانتی واقعی</h3>
+                            <p class="text-muted small mb-0">
+                                تضمین کیفیت تمامی محصولات تولیدی با ارائه گارانتی معتبر
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="pt-4 pb-3 mt-5">
+      <div class="container">
+        <div class="row g-4" dir="rtl">
+          <!-- ستون اول (راست): لوگو و شبکه‌های اجتماعی -->
+          <!-- در موبایل وسط‌چین و در دسکتاپ راست‌چین -->
+          <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+            <div class="d-flex flex-column flex-md-row align-items-center mb-3">
+              <img
+                src="images/logohigh.png"
+                alt="لوگو صنعت بایگان آریا"
+                height="60"
+                class="ms-md-3 mb-2 mb-md-0"
+                style="filter: brightness(0) invert(1)"
+              />
+              <div>
+                <h4 class="h5 fw-bold mb-1 text-white">صنعت بایگان آریا</h4>
+                <p class="small text-white-50 mb-0" style="font-size: 0.85rem">
+                  تولید کننده محصولات آشپزخانه<br />و تجهیزات بایگانی
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="d-flex gap-3 justify-content-center justify-content-md-start"
+            >
+              <!-- این دیو خالی فقط در دسکتاپ دیده می‌شود تا آیکون‌ها را دقیقاً زیر متن هل دهد -->
+              <div class="d-none d-md-block" style="width: 75px"></div>
+              <a href="#" class="footer-social-link">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="#" class="footer-social-link">
+                <i class="bi bi-telegram"></i>
+              </a>
+              <a href="#" class="footer-social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ستون دوم: کارخانه و دفتر مرکزی -->
+          <!-- راست‌چین استاندارد برای حفظ نظم عمودی آیکون‌ها در موبایل -->
+          <div class="col-12 col-md-6 col-lg-4 text-start">
+            <h4 class="h6 fw-bold mb-3 text-white">کارخانه و دفتر مرکزی</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2 d-flex align-items-start text-white">
+                <i class="bi bi-geo-alt fs-5 ms-2 mt-1"></i>
+                <span class="small" style="font-size: 0.75rem"
+                  >تهران، جاده خاوران، روبه‌روی فرون‌آباد، جنب باسکول آلمانی،
+                  خیابان امام حسین (ع)، بعد از بن‌بست دوم، درب بزرگ
+                  آبی‌رنگ</span
+                >
+              </li>
+              <li class="mb-2 d-flex align-items-center text-white">
+                <i class="bi bi-telephone fs-5 ms-2"></i>
+                <span dir="ltr" class="small">021 - 36849166</span>
+              </li>
+              <li class="mb-2 d-flex align-items-center text-white">
+                <i class="bi bi-printer fs-5 ms-2"></i>
+                <span dir="ltr" class="small">021 - 36849257</span>
+              </li>
+              <li class="mb-2 d-flex align-items-center text-white">
+                <i class="bi bi-phone fs-5 ms-2"></i>
+                <span dir="ltr" class="small"
+                  >0912 - 3244197 | 0912 - 5375404</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- ستون سوم: محصولات -->
+          <!-- استفاده از col-6 برای اختصاص ۵۰٪ عرض در موبایل (کنار ستون بعدی قرار می‌گیرد) -->
+          <div class="col-6 col-md-6 col-lg-2 text-start">
+            <h4 class="h6 fw-bold mb-3 text-white">محصولات</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >سرویس قابلمه</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >سرویس فلزی</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >سرویس چوبی</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- ستون چهارم (چپ): دسترسی سریع -->
+          <!-- استفاده از col-6 برای اختصاص ۵۰٪ عرض در موبایل -->
+          <div class="col-6 col-md-6 col-lg-2 text-start">
+            <h4 class="h6 fw-bold mb-3 text-white">دسترسی سریع</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a
+                  href="index.html"
+                  class="small text-white text-decoration-none"
+                  >صفحه اصلی</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="kitchen-products.html"
+                  class="small text-white text-decoration-none"
+                  >محصولات آشپزخانه</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="archive-products.html"
+                  class="small text-white text-decoration-none"
+                  >تجهیزات بایگانی</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >درباره ما</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >تماس با ما</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="my-3 border-white opacity-25" />
+
+        <!-- کپی‌رایت -->
+        <div
+          class="text-center text-white-50 small pb-2"
+          dir="ltr"
+          style="font-size: 0.8rem"
+        >
+          © 2026 Sanat Baygan Aria. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarCollapse = document.getElementById("navbarNav");
+
+        // بررسی می‌کنیم که آیا بوت‌استرپ کاملاً لود شده است یا خیر
+        if (navbarCollapse && typeof bootstrap !== "undefined") {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false,
+          });
+
+          document.querySelectorAll(".navbar-nav a").forEach((link) => {
+            link.addEventListener("click", () => {
+              // اگر منو در حال نمایش است، آن را به طور مستقیم با دستور رسمی بوت‌استرپ ببند
+              if (navbarCollapse.classList.contains("show")) {
+                bsCollapse.hide();
+              }
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

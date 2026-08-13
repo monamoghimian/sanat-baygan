@@ -414,6 +414,46 @@ footer a:hover {
   object-fit: contain;
 }
 
+/* =========================================
+   Infinite Client Logo Slider
+========================================= */
+.clients-slider-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    direction: ltr; /* برای حرکت روان و استاندارد از چپ به راست تنظیم شده است */
+}
+
+.clients-slide-track {
+    display: inline-flex;
+    align-items: center;
+    /* سرعت حرکت اسلایدر با تغییر این عدد (30s) کم و زیاد می‌شود */
+    animation: scrollLogos 30s linear infinite; 
+}
+
+/* وقتی ماوس روی اسلایدر می‌رود، حرکت متوقف می‌شود */
+.clients-slider-container:hover .clients-slide-track {
+    animation-play-state: paused; 
+}
+
+.clients-slide-track img {
+    height: 80px; /* ارتفاع ثابت برای نظم بیشتر - در صورت نیاز تغییر دهید */
+    width: auto;
+    margin: 0 15px;
+    mix-blend-mode: multiply; /* حذف بک‌گراند سفید عکس‌ها */
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.clients-slide-track img:hover {
+    opacity: 1; /* پررنگ شدن با هاور */
+}
+
+@keyframes scrollLogos {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
 
 /* Responsive adjustments */
 @media (max-width: 991.98px) {
