@@ -368,7 +368,6 @@ footer a:hover {
 /* حالت هاور کارت‌ها */
 .product-card-hover:hover {
   transform: translateY(-5px) !important;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important;
 }
 
 /* =========================================
@@ -433,6 +432,93 @@ footer a:hover {
     bottom: 40px;
   }
 }
+
+/* =========================================
+   Archive Page Specific Styles
+========================================= */
+
+/* Cursor indication for images that open in lightbox */
+.zoomable-image {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+/* Slightly scale the image independently when hovering its card */
+.product-card-hover:hover .zoomable-image {
+    transform: scale(1.05);
+}
+
+/* =========================================
+   Lightbox Modal Styles
+========================================= */
+.lightbox-modal {
+    padding: 0;
+    border: none;
+    background: transparent;
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+.lightbox-modal::backdrop {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+}
+
+.lightbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 2rem;
+}
+
+.lightbox-container img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    animation: zoomIn 0.2s ease-out;
+}
+
+.lightbox-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    z-index: 10;
+}
+
+.lightbox-close-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Prevent scrolling on the main body when lightbox is open */
+body.lightbox-open {
+    overflow: hidden;
+}
+
+
 /* باز شدن منوی آبشاری با هاور در دسکتاپ */
 @media (min-width: 992px) {
   .navbar-nav .dropdown:hover .dropdown-menu {
