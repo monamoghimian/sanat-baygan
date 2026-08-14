@@ -558,6 +558,21 @@ body.lightbox-open {
     overflow: hidden;
 }
 
+/* =========================================
+   Form Focus Effect
+========================================= */
+.custom-focus {
+    background-color: #fbf9f6;
+    border: 1px solid #dee2e6; /* رنگ حاشیه پیش‌فرض */
+    transition: all 0.3s ease;
+}
+
+.custom-focus:focus {
+    border-color: var(--primary-green) !important;
+    /* ایجاد یک هاله سبز ملایم دور کادر هنگام کلیک */
+    box-shadow: 0 0 0 0.25rem rgba(172, 215, 131, 0.3) !important; 
+    background-color: #ffffff !important;
+}
 
 /* باز شدن منوی آبشاری با هاور در دسکتاپ */
 @media (min-width: 992px) {

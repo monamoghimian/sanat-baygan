@@ -86,7 +86,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">صفحه اصلی</a>
+                <a class="nav-link active" href="index.html">صفحه اصلی</a>
               </li>
               <!-- ۱. منوی محصولات مخصوص موبایل و تبلت (بدون زیرمنو، کلیک مستقیم به صفحه) -->
               <li class="nav-item d-lg-none">
@@ -154,10 +154,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="about.html">درباره ما</a>
+                <a class="nav-link" href="about.html">درباره ما</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">تماس با ما</a>
+                <a class="nav-link" href="#contact">تماس با ما</a>
               </li>
             </ul>
             <div class="d-flex align-items-center gap-3">
@@ -175,159 +175,284 @@
       </nav>
     </header>
 
-<main>
+    <main>
+      <!-- 1. بخش هیرو (پس‌زمینه کرم تیره) -->
+      <!-- در صورت داشتن متغیرهای رنگی در CSS می‌توانید کدهای هگزادسیمال را با آن‌ها جایگزین کنید -->
+      <section class="py-3" style="background-color: #f4f2ea">
+        <div class="container text-center">
+          <!-- تکنیک بصری: آیکون ظریف و شیشه‌ای بالای عنوان -->
+          <div
+            class="d-inline-flex justify-content-center align-items-center rounded-circle mb-2"
+            style="
+              width: 55px;
+              height: 55px;
+              background-color: rgba(172, 215, 131, 0.2);
+            "
+          >
+            <i
+              class="bi bi-headset fs-4"
+              style="color: var(--primary-green-hover)"
+            ></i>
+          </div>
 
-        <!-- 1. هیرو و معرفی شرکت -->
-        <section class="py-3 mt-3">
-            <div class="container">
-                <div class="row g-5 align-items-center flex-column-reverse flex-md-row">
-                    <div class="col-12 col-md-6 text-center text-md-start">
-                        <h1 class="fw-bold mb-3">درباره صنعت بایگان آریا</h1>
-                        
-                        <!-- نگهدارنده فلکس: چیدمان در یک خط -->
-                        <!-- justify-content-md-between شماره ثبت را در دسکتاپ به سمت چپ هل می‌دهد -->
-                        <div class="d-flex align-items-center justify-content-center justify-content-md-between mb-4 gap-3">
-                            <!-- شعار شرکت -->
-                            <h2 class="h5 mb-0" style="color: var(--primary-green-hover);">«با شما برتر هستیم»</h2>
-                            
-                            <!-- شماره ثبت (در سمت چپ شعار) -->
-                            <span class="badge bg-cream-section text-primary-green px-3 py-2 rounded-pill border">شماره ثبت: ۳۶۱۳۳۶</span>
-                        </div>
-                        
-                        <p class="text-muted lh-lg "style="text-align: justify;">
-                            گروه صنعتی ما در سال ۱۳۸۰ توسط <strong>آقای قلی‌بیک و پسرانش</strong>، به عنوان یکی از پیشگامان صنعت لوازم بایگانی و اداری فلزی تأسیس گردید. ما با تکیه بر بیش از دو دهه تجربه، دانش جوانان متخصص این مرز و بوم و بهبود مستمر کیفیت، توانسته‌ایم جایگاهی شایسته و قابل اعتماد در میان سازمان‌ها و ادارات دولتی و خصوصی کسب کنیم. هدف ما همواره طراحی و تولید محصولاتی جدید و درخور شأن شما مشتریان گرامی بوده است، چرا که عمیقاً باور داریم برتری ما در گرو همراهی و رضایت شماست.
-                        </p>
+          <h1 class="fw-bold text-dark mb-0">تماس با ما</h1>
+
+          <!-- تکنیک بصری: خط تاکید (Divider) سبز رنگ -->
+          <div
+            class="mx-auto mt-3 mb-3 rounded-pill"
+            style="
+              width: 50px;
+              height: 4px;
+              background-color: var(--primary-green);
+            "
+          ></div>
+
+          <!-- توضیحات در دو خط (با استفاده از تگ br) -->
+          <p class="text-muted mx-auto lh-lg mb-0" style="font-size: 1.05rem">
+            برای دریافت اطلاعات محصولات، مشاوره و هماهنگی خرید با کارشناسان صنعت
+            بایگان آریا در ارتباط باشید
+          </p>
+        </div>
+      </section>
+
+      <!-- 2. بخش محتوای اصلی (پس‌زمینه کرم روشن) -->
+      <section class="py-3" style="background-color: #fcfbf8">
+        <div class="container py-3">
+          <div class="row g-4 g-lg-5 mb-5">
+            <!-- اطلاعات تماس (ستون راست) -->
+            <div class="col-12 col-lg-5">
+              <div class="d-flex flex-column gap-3">
+                <!-- کارت آدرس -->
+                <!-- استفاده از gap-4 برای ایجاد فاصله شیک و استاندارد بین آیکون و متن -->
+                <div
+                  class="card border-0 shadow-sm rounded-4 p-3 d-flex flex-row align-items-center bg-white transition-smooth product-card-hover gap-4"
+                >
+                  <div
+                    class="bg-primary-green text-white rounded-3 d-flex justify-content-center align-items-center flex-shrink-0"
+                    style="width: 50px; height: 50px"
+                  >
+                    <i class="bi bi-geo-alt fs-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="fw-bold mb-1" style="font-size: 0.9rem">آدرس</h3>
+                    <p
+                      class="text-muted mb-0 lh-base"
+                      style="font-size: 0.8rem"
+                    >
+                      تهران، جاده خاوران، روبه‌روی فرون‌آباد، جنب باسکول آلمانی،
+                      خیابان امام حسین (ع)، بعد از بن‌بست دوم، درب بزرگ آبی‌رنگ
+                    </p>
+                  </div>
+                </div>
+
+                <!-- کارت تلفن -->
+                <div
+                  class="card border-0 shadow-sm rounded-4 p-3 d-flex flex-row align-items-center bg-white transition-smooth product-card-hover gap-4"
+                >
+                  <div
+                    class="bg-primary-green text-white rounded-3 d-flex justify-content-center align-items-center flex-shrink-0"
+                    style="width: 50px; height: 50px"
+                  >
+                    <i class="bi bi-telephone fs-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="fw-bold mb-1" style="font-size: 0.9rem">تلفن</h3>
+                    <a
+                      href="tel:02136849166"
+                      class="text-muted text-decoration-none"
+                      dir="ltr"
+                      style="font-size: 0.85rem"
+                      >021 - 36849166</a
+                    >
+                  </div>
+                </div>
+
+                <!-- کارت تلفکس -->
+                <div
+                  class="card border-0 shadow-sm rounded-4 p-3 d-flex flex-row align-items-center bg-white transition-smooth product-card-hover gap-4"
+                >
+                  <div
+                    class="bg-primary-green text-white rounded-3 d-flex justify-content-center align-items-center flex-shrink-0"
+                    style="width: 50px; height: 50px"
+                  >
+                    <i class="bi bi-printer fs-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="fw-bold mb-1" style="font-size: 0.9rem">
+                      تلفکس
+                    </h3>
+                    <a
+                      href="tel:02136849257"
+                      class="text-muted text-decoration-none"
+                      dir="ltr"
+                      style="font-size: 0.85rem"
+                      >021 - 36849257</a
+                    >
+                  </div>
+                </div>
+
+                <!-- کارت همراه -->
+                <div
+                  class="card border-0 shadow-sm rounded-4 p-3 d-flex flex-row align-items-center bg-white transition-smooth product-card-hover gap-4"
+                >
+                  <div
+                    class="bg-primary-green text-white rounded-3 d-flex justify-content-center align-items-center flex-shrink-0"
+                    style="width: 50px; height: 50px"
+                  >
+                    <i class="bi bi-phone fs-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="fw-bold mb-1" style="font-size: 0.9rem">
+                      همراه
+                    </h3>
+                    <div
+                      class="text-muted d-flex gap-2"
+                      dir="ltr"
+                      style="font-size: 0.85rem"
+                    >
+                      <a
+                        href="tel:09123244197"
+                        class="text-muted text-decoration-none transition-smooth"
+                        >0912 - 3244197</a
+                      >
+                      |
+                      <a
+                        href="tel:09125375404"
+                        class="text-muted text-decoration-none transition-smooth"
+                        >0912 - 5375404</a
+                      >
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. فرم ارسال پیام (ستون چپ) -->
+            <div class="col-12 col-lg-7">
+              <!-- پدینگ کارت روی p-4 تنظیم شد تا فضای استانداردی داشته باشد -->
+              <div class="card border-0 shadow-sm rounded-4 p-4 bg-white h-100">
+                <h2 class="h5 fw-bold mb-4 text-dark">
+                  ارسال پیام به واحد فروش و پشتیبانی
+                </h2>
+                <form>
+                  <div class="row g-3">
                     <div class="col-12 col-md-6">
-                        <!-- تصویر کارخانه -->
-                        <img src="images/factory.png" alt="کارخانه صنعت بایگان آریا" class="img-fluid rounded-4 shadow-sm w-100" style="object-fit: cover; aspect-ratio: 16/9;">
+                      <label class="form-label small text-muted fw-bold"
+                        >شماره تماس *</label
+                      >
+                      <!-- حذف bg-light و اضافه شدن custom-focus -->
+                      <input
+                        type="tel"
+                        class="form-control text-start shadow-none custom-focus"
+                        dir="ltr"
+                        required
+                      />
                     </div>
-                </div>
-            </div>
-        </section>
-  
-        <!-- 2. گزیده‌ای از مشتریان (اسلایدر متحرک) -->
-        <section class="py-4 mb-3 bg-cream-section">
-            <div class="container pt-3">
-                <!-- عنوان بخش -->
-                <div class="text-center mb-4">
-                    <h2 class="h4 fw-bold mb-0">گزیده‌ای از مشتریان ما</h2>
-                </div>
 
-                <!-- نگهدارنده اسلایدر -->
-                <div class="clients-slider-container mb-4">
-                    <div class="clients-slide-track">
-                        <!-- سری اول عکس‌ها -->
-                        <img src="images/slide-1.jpg" alt="مشتریان صنعت بایگان">
-                        <img src="images/slide-2.jpg" alt="مشتریان صنعت بایگان">
-                        <img src="images/slide-3.jpg" alt="مشتریان صنعت بایگان">
+                    <div class="col-12 col-md-6">
+                      <label class="form-label small text-muted fw-bold"
+                        >نام و نام خانوادگی *</label
+                      >
+                      <!-- حذف bg-light و اضافه شدن custom-focus -->
+                      <input
+                        type="text"
+                        class="form-control shadow-none custom-focus"
+                        required
+                      />
+                    </div>
 
-                        <!-- سری دوم عکس‌ها (تکرار دقیق برای حلقه بی‌نهایت) -->
-                        <img src="images/slide-1.jpg" alt="مشتریان صنعت بایگان">
-                        <img src="images/slide-2.jpg" alt="مشتریان صنعت بایگان">
-                        <img src="images/slide-3.jpg" alt="مشتریان صنعت بایگان">
+                    <div class="col-12">
+                      <label class="form-label small text-muted fw-bold"
+                        >موضوع پیام *</label
+                      >
+                      <!-- حذف bg-light و اضافه شدن custom-focus -->
+                      <select
+                        class="form-select shadow-none custom-focus"
+                        required
+                      >
+                        <option value="" selected disabled>انتخاب کنید</option>
+                        <option value="sales">خرید و استعلام قیمت</option>
+                        <option value="support">پشتیبانی محصولات</option>
+                        <option value="other">سایر موارد</option>
+                      </select>
                     </div>
-                </div>
-                
-                <!-- زیرنویس بخش -->
-                <div class="text-center mb-2">
-                    <p class="text-muted small mb-0">
-                        افتخار همکاری با برترین سازمان‌ها و نهادهای کشور
-                    </p>
-                </div>
-            </div>
-        </section>
 
-        <!-- 3. مسیر فعالیت (تایم‌لاین) -->
-        <section class="py-4 my-3">
-            <div class="container py-4">
-                <h2 class="h3 fw-bold text-center mb-5">مسیر رشد و توسعه ما</h2>
-                <div class="row g-4 position-relative">
-                    <div class="col-12 col-md-4 text-center">
-                        <div class="bg-white rounded-circle d-flex align-items-center justify-content-center mx-auto shadow-sm mb-3 text-primary-green fw-bold fs-4" style="width: 80px; height: 80px">
-                            ۱۳۸۰
-                        </div>
-                        <h3 class="h6 fw-bold mb-2">تأسیس مجموعه</h3>
-                        <p class="text-muted small px-3">
-                            آغاز فعالیت با نام «گروه صنعتی صنایع فلزی پارسیان» با هدف طراحی
-                            و نصب سیستم‌های مدرن بایگانی.
-                        </p>
+                    <div class="col-12">
+                      <label class="form-label small text-muted fw-bold"
+                        >پیام شما *</label
+                      >
+                      <!-- حذف bg-light و اضافه شدن custom-focus -->
+                      <!-- تغییر rows="4" به rows="2" برای کاهش ارتفاع -->
+                      <textarea
+                        class="form-control shadow-none custom-focus"
+                        rows="2"
+                        placeholder="پیام خود را بنویسید..."
+                        required
+                      ></textarea>
                     </div>
-                    <div class="col-12 col-md-4 text-center">
-                        <div class="bg-white rounded-circle d-flex align-items-center justify-content-center mx-auto shadow-sm mb-3 text-primary-green fw-bold fs-4" style="width: 80px; height: 80px">
-                            ۱۳۸۸
-                        </div>
-                        <h3 class="h6 fw-bold mb-2">توسعه و تغییر نام</h3>
-                        <p class="text-muted small px-3">
-                            گسترش خطوط تولید و تغییر نام رسمی به «شرکت صنعت بایگان پرتو
-                            آریا» برای حضور قدرتمندتر در بازار.
-                        </p>
-                    </div>
-                    <div class="col-12 col-md-4 text-center">
-                        <div class="bg-primary-green text-white rounded-circle d-flex align-items-center justify-content-center mx-auto shadow-sm mb-3 fw-bold fs-5" style="width: 80px; height: 80px">
-                            امروز
-                        </div>
-                        <h3 class="h6 fw-bold mb-2">صنعت بایگان آریا</h3>
-                        <p class="text-muted small px-3">
-                            بیش از ۲۵ سال تجربه درخشان و ورود به عرصه تولید تجهیزات مدرن
-                            آشپزخانه با بالاترین استانداردها.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- 4. رویکرد و تعهدات -->
-        <section class="bg-cream-section py-5 mb-3">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="h3 fw-bold">تعهدات ما به شما</h2>
-                    <p class="text-muted">
-                        ارزش‌هایی که ما را ملزم به ارائه بهترین‌ها می‌کند
-                    </p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4 bg-white transition-smooth product-card-hover">
-                            <i class="bi bi-cpu text-primary-green fs-1 mb-3"></i>
-                            <h3 class="h6 fw-bold mb-2">توسعه فناوری</h3>
-                            <p class="text-muted small mb-0">
-                                به‌روزرسانی مستمر و استفاده از آخرین تکنولوژی‌های تولید
-                            </p>
-                        </div>
+                    <!-- تغییر mt-4 به mt-2 برای کاهش فاصله دکمه با کادر بالا -->
+                    <div class="col-12 mt-2">
+                      <button
+                        type="submit"
+                        class="btn text-white w-100 py-3 rounded-3 transition-smooth fw-bold"
+                        style="background-color: var(--primary-green)"
+                      >
+                        <i class="bi bi-send ms-2"></i> ارسال پیام
+                      </button>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4 bg-white transition-smooth product-card-hover">
-                            <i class="bi bi-patch-check text-primary-green fs-1 mb-3"></i>
-                            <h3 class="h6 fw-bold mb-2">کیفیت و دوام</h3>
-                            <p class="text-muted small mb-0">
-                                تولید محصولاتی مستحکم با عمر مفید بالا برای استفاده طولانی‌مدت
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4 bg-white transition-smooth product-card-hover">
-                            <i class="bi bi-headset text-primary-green fs-1 mb-3"></i>
-                            <h3 class="h6 fw-bold mb-2">خدمات پس از فروش</h3>
-                            <p class="text-muted small mb-0">
-                                پاسخگویی سریع و پشتیبانی قدرتمند از تمامی مشتریان
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4 bg-white transition-smooth product-card-hover">
-                            <i class="bi bi-shield-check text-primary-green fs-1 mb-3"></i>
-                            <h3 class="h6 fw-bold mb-2">گارانتی واقعی</h3>
-                            <p class="text-muted small mb-0">
-                                تضمین کیفیت تمامی محصولات تولیدی با ارائه گارانتی معتبر
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                  </div>
+                </form>
+              </div>
             </div>
-        </section>
+          </div>
+
+          <!-- 4. بخش نقشه (باکس متنی هدایت شده به سمت چپ) -->
+          <div
+            class="card border-0 shadow-sm rounded-4 overflow-hidden position-relative mt-4"
+            style="
+              background-image: url('images/map-bg.jpg');
+              background-size: cover;
+              background-position: center;
+              min-height: 300px;
+            "
+          >
+            <!-- استفاده از justify-content-md-end برای هل دادن باکس به سمت چپ (در سایت‌های راست‌چین) -->
+            <div
+              class="d-flex h-100 w-100 position-absolute top-0 start-0 z-1 justify-content-center justify-content-md-end align-items-center p-3 p-md-5"
+            >
+              <!-- باکس سفید نقشه -->
+              <div
+                class="bg-white p-4 rounded-4 shadow text-center"
+                style="max-width: 320px; width: 100%"
+              >
+                <div
+                  class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto mb-3"
+                  style="width: 50px; height: 50px"
+                >
+                  <i
+                    class="bi bi-geo-alt-fill fs-4"
+                    style="color: var(--primary-green)"
+                  ></i>
+                </div>
+                <h3 class="h6 fw-bold mb-2 text-dark">موقعیت ما روی نقشه</h3>
+                <p class="text-muted mb-4" style="font-size: 0.8rem">
+                  برای مشاهده مسیر در نقشه‌های گوگل کلیک کنید
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/dNwqkm7M8hEmaqwd9"
+                  target="_blank"
+                  class="btn text-white w-100 py-2 rounded-3 transition-smooth fw-bold"
+                  style="background-color: var(--primary-green)"
+                >
+                  <i class="bi bi-map ms-1"></i> مشاهده در Google Map
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
     <!-- Global Footer -->
     <footer class="pt-4 pb-3 mt-5">
       <div class="container">
@@ -448,12 +573,14 @@
                 >
               </li>
               <li class="mb-2">
-                <a href="about.html" class="small text-white text-decoration-none"
+                <a
+                  href="about.html"
+                  class="small text-white text-decoration-none"
                   >درباره ما</a
                 >
               </li>
               <li class="mb-2">
-                <a href="contact.html" class="small text-white text-decoration-none"
+                <a href="#" class="small text-white text-decoration-none"
                   >تماس با ما</a
                 >
               </li>
