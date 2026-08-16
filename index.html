@@ -43,137 +43,144 @@
   </head>
   <body>
     <!-- Header & Navigation -->
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a
-            class="navbar-brand d-flex align-items-center"
-            href="index-fa.html"
-          >
-            <img
-              src="images/logohigh.png"
-              alt="لوگو صنعت بایگان آریا"
-              class="d-inline-block align-text-top"
-            />
-          </a>
+<header class="sticky-top"> 
+  <nav class="navbar navbar-expand-lg navbar-light"> 
+    <div class="container"> 
+      
+      <!-- گروه سمت راست: دکمه همبرگری و لوگو --> 
+      <div class="d-flex align-items-center">
+        <!-- دکمه همبرگری منوی موبایل --> 
+        <button 
+          class="navbar-toggler border-0 p-0 me-1" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="تغییر وضعیت منو"
+          style="box-shadow: none;"
+        > 
+          <span class="navbar-toggler-icon"></span> 
+        </button> 
 
-          <!-- باکس دکمه‌های مخصوص موبایل (تماس مستقیم + منوی همبرگری) -->
-          <div class="d-flex align-items-center d-lg-none">
-            <!-- دکمه تماس تلفنی (فقط در موبایل نمایش داده می‌شود) -->
-            <a
-              href="tel:091230600"
-              class="btn btn-category btn-sm rounded-circle d-flex align-items-center justify-content-center mx-2 shadow-sm text-white"
-              style="width: 38px; height: 38px"
-            >
-              <i class="bi bi-telephone-fill fs-6"></i>
-            </a>
-            <a href="#" class="lang-switcher">EN</a>
+        <!-- لوگو -->
+        <a 
+          class="navbar-brand d-flex align-items-center m-0" 
+          href="index-fa.html" 
+        > 
+          <img 
+            src="images/logohigh.png" 
+            alt="لوگو صنعت بایگان آریا" 
+            class="d-inline-block align-text-top" 
+          /> 
+        </a> 
+      </div>
 
-            <!-- دکمه همبرگری منوی موبایل -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="تغییر وضعیت منو"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
+      <!-- گروه سمت چپ: باکس دکمه‌های مخصوص موبایل (تماس مستقیم + تغییر زبان) --> 
+      <div class="d-flex align-items-center d-lg-none"> 
+        <!-- دکمه تماس تلفنی --> 
+        <a 
+          href="tel:091230600" 
+          class="btn btn-category btn-sm rounded-circle d-flex align-items-center justify-content-center mx-2 shadow-sm text-white" 
+          style="width: 38px; height: 38px" 
+        > 
+          <i class="bi bi-telephone-fill fs-6"></i> 
+        </a> 
+        <a href="#" class="lang-switcher">EN</a> 
+      </div> 
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">صفحه اصلی</a>
-              </li>
-              <!-- ۱. منوی محصولات مخصوص موبایل و تبلت (بدون زیرمنو، کلیک مستقیم به صفحه) -->
-              <li class="nav-item d-lg-none">
-                <a class="nav-link" href="kitchen-products.html">
-                  محصولات آشپزخانه
-                </a>
-              </li>
-              <!-- منوی محصولات مخصوص دسکتاپ (بدون تداخل و دراپ‌داون اجباری) -->
-              <li class="nav-item dropdown d-none d-lg-block">
-                <a
-                  class="nav-link"
-                  href="kitchen-products.html"
-                  id="kitchenDropdown"
-                >
-                  محصولات آشپزخانه
-                  <i class="bi bi-chevron-down" style="font-size: 0.75rem"></i>
-                </a>
-                <ul
-                  class="dropdown-menu border-0 shadow-sm py-2"
-                  aria-labelledby="kitchenDropdown"
-                  style="background-color: var(--cream-bg, #fdfbf7)"
-                >
-                  <li>
-                    <a
-                      class="dropdown-item py-2"
-                      href="#pot-products"
-                      style="
-                        text-align: right;
-                        padding-right: 15px;
-                        padding-left: 15px;
-                      "
-                      >سرویس قابلمه</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item py-2"
-                      href="#metal-products"
-                      style="
-                        text-align: right;
-                        padding-right: 15px;
-                        padding-left: 15px;
-                      "
-                      >سرویس فلزی</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item py-2"
-                      href="#wood-products"
-                      style="
-                        text-align: right;
-                        padding-right: 15px;
-                        padding-left: 15px;
-                      "
-                      >سرویس چوبی</a
-                    >
-                  </li>
-                </ul>
-              </li>
+      <!-- بخش منوها (منوی کشویی در موبایل و نوار باز در دسکتاپ) -->
+      <div class="collapse navbar-collapse" id="navbarNav"> 
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> 
+          <li class="nav-item"> 
+            <a class="nav-link active" href="index.html">صفحه اصلی</a> 
+          </li> 
+          <!-- ۱. منوی محصولات مخصوص موبایل و تبلت (بدون زیرمنو، کلیک مستقیم به صفحه) --> 
+          <li class="nav-item d-lg-none"> 
+            <a class="nav-link" href="kitchen-products.html"> 
+              محصولات آشپزخانه 
+            </a> 
+          </li> 
+          <!-- منوی محصولات مخصوص دسکتاپ (بدون تداخل و دراپ‌داون اجباری) --> 
+          <li class="nav-item dropdown d-none d-lg-block"> 
+            <a 
+              class="nav-link" 
+              href="kitchen-products.html" 
+              id="kitchenDropdown" 
+            > 
+              محصولات آشپزخانه 
+              <i class="bi bi-chevron-down" style="font-size: 0.75rem"></i> 
+            </a> 
+            <ul 
+              class="dropdown-menu border-0 shadow-sm py-2" 
+              aria-labelledby="kitchenDropdown" 
+              style="background-color: var(--cream-bg, #fdfbf7)" 
+            > 
+              <li> 
+                <a 
+                  class="dropdown-item py-2" 
+                  href="#pot-products" 
+                  style=" 
+                    text-align: right; 
+                    padding-right: 15px; 
+                    padding-left: 15px; 
+                  " 
+                  >سرویس قابلمه</a 
+                > 
+              </li> 
+              <li> 
+                <a 
+                  class="dropdown-item py-2" 
+                  href="#metal-products" 
+                  style=" 
+                    text-align: right; 
+                    padding-right: 15px; 
+                    padding-left: 15px; 
+                  " 
+                  >سرویس فلزی</a 
+                > 
+              </li> 
+              <li> 
+                <a 
+                  class="dropdown-item py-2" 
+                  href="#wood-products" 
+                  style=" 
+                    text-align: right; 
+                    padding-right: 15px; 
+                    padding-left: 15px; 
+                  " 
+                  >سرویس چوبی</a 
+                > 
+              </li> 
+            </ul> 
+          </li> 
 
-              <li class="nav-item">
-                <a class="nav-link" href="archive-products.html"
-                  >تجهیزات بایگانی</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">درباره ما</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">تماس با ما</a>
-              </li>
-            </ul>
-            <div class="d-flex align-items-center gap-3">
-              <a href="#" class="lang-switcher d-none d-lg-block">EN</a>
-              <!-- دکمه تماس نسخه دسکتاپ -->
-              <a
-                href="#contact"
-                class="btn-contact-header d-none d-sm-inline-block"
-              >
-                درخواست مشاوره<i class="bi bi-telephone-fill ms-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+          <li class="nav-item"> 
+            <a class="nav-link" href="archive-products.html" 
+              >تجهیزات بایگانی</a 
+            > 
+          </li> 
+          <li class="nav-item"> 
+            <a class="nav-link" href="about.html">درباره ما</a> 
+          </li> 
+          <li class="nav-item"> 
+            <a class="nav-link" href="contact.html">تماس با ما</a> 
+          </li> 
+        </ul> 
+        <div class="d-flex align-items-center gap-3"> 
+          <a href="#" class="lang-switcher d-none d-lg-block">EN</a> 
+          <!-- دکمه تماس نسخه دسکتاپ --> 
+          <a 
+            href="#contact" 
+            class="btn-contact-header d-none d-sm-inline-block" 
+          > 
+            درخواست مشاوره<i class="bi bi-telephone-fill ms-1"></i> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </nav> 
+</header>
 
     <main>
       <!-- Hero Slider Section -->
