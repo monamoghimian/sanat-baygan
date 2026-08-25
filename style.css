@@ -574,6 +574,61 @@ body.lightbox-open {
     background-color: #ffffff !important;
 }
 
+/* --- استایل زیرمنوی موبایل «محصولات آشپزخانه» --- */
+
+/* دکمه‌ی شورون (فلش) که مسئول باز/بسته کردن زیرمنوست */
+.submenu-toggle-btn {
+  line-height: 1;
+  box-shadow: none !important;
+}
+
+/* وقتی زیرمنو باز است، Bootstrap خودکار aria-expanded="true" 
+   روی دکمه می‌ذاره؛ از همین برای چرخوندن فلش با CSS استفاده می‌کنیم */
+.submenu-icon {
+  transition: transform 0.25s ease;
+}
+.submenu-toggle-btn[aria-expanded="true"] .submenu-icon {
+  transform: rotate(180deg);
+}
+
+/* ظاهر آیتم‌های زیرمنو در موبایل: تورفتگی و رنگ ملایم‌تر */
+.submenu-mobile {
+  border-right: 2px solid var(--primary-green, #2e7d32);
+  margin-right: 0.5rem;
+}
+.submenu-mobile .nav-link {
+  font-size: 0.92rem;
+  opacity: 0.9;
+}
+/* --- هاور برای زیرمنوی دسکتاپ: فقط خط زیر متن، بدون تغییر پس‌زمینه --- */
+.dropdown-item {
+  position: relative; /* برای اینکه خط (::after) بتونه نسبت به همین عنصر جاگیری بشه */
+  background-color: transparent !important; /* جلوگیری از رنگ پیش‌فرض بوت‌استرپ روی هاور */
+  transition: var(--transition-smooth);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--primary-green) !important;
+  background-color: transparent !important;
+}
+
+.dropdown-item::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  right: 15px; /* هم‌راستا با padding-right خود آیتم (که inline style دارید) */
+  left: 15px;
+  height: 2px;
+  background-color: var(--primary-green);
+  transform: scaleX(0);
+  transition: var(--transition-smooth);
+}
+
+.dropdown-item:hover::after {
+  transform: scaleX(1);
+}
+
 /* باز شدن منوی آبشاری با هاور در دسکتاپ */
 @media (min-width: 992px) {
   .navbar-nav .dropdown:hover .dropdown-menu {

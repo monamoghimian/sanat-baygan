@@ -43,135 +43,198 @@
   </head>
   <body>
     <!-- Header & Navigation -->
-   <header class="sticky-top"> 
-  <nav class="navbar navbar-expand-lg navbar-light"> 
-    <div class="container"> 
-      
-      <!-- گروه سمت راست: دکمه همبرگری و لوگو --> 
-      <div class="d-flex align-items-center">
-        <!-- دکمه همبرگری منوی موبایل --> 
-        <button 
-          class="navbar-toggler border-0 p-0 me-1" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNav" 
-          aria-controls="navbarNav" 
-          aria-expanded="false" 
-          aria-label="تغییر وضعیت منو"
-          style="box-shadow: none;"
-        > 
-          <span class="navbar-toggler-icon"></span> 
-        </button> 
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- گروه سمت راست: دکمه همبرگری و لوگو -->
+          <div class="d-flex align-items-center">
+            <!-- دکمه همبرگری منوی موبایل -->
+            <button
+              class="navbar-toggler border-0 p-0 me-1"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="تغییر وضعیت منو"
+              style="box-shadow: none"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- لوگو -->
-        <a 
-          class="navbar-brand d-flex align-items-center m-0" 
-          href="index.html" 
-        > 
-          <img 
-            src="images/logohigh.png" 
-            alt="لوگو صنعت بایگان آریا" 
-            class="d-inline-block align-text-top" 
-          /> 
-        </a> 
-      </div>
+            <!-- لوگو -->
+            <a
+              class="navbar-brand d-flex align-items-center m-0"
+              href="index.html"
+            >
+              <img
+                src="images/logohigh.png"
+                alt="لوگو صنعت بایگان آریا"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+          </div>
 
-      <!-- گروه سمت چپ: باکس دکمه‌های مخصوص موبایل (تماس مستقیم + تغییر زبان) --> 
-      <div class="d-flex align-items-center d-lg-none"> 
-        <!-- دکمه تماس تلفنی --> 
-        <a 
-          href="tel:02136849166" 
-          class="btn btn-category btn-sm rounded-circle d-flex align-items-center justify-content-center mx-2 shadow-sm text-white" 
-          style="width: 38px; height: 38px;" 
-        > 
-          <i class="bi bi-telephone-fill fs-6"></i> 
-        </a> 
-        <a href="#" class="lang-switcher">EN</a> 
-      </div> 
+          <!-- گروه سمت چپ: باکس دکمه‌های مخصوص موبایل (تماس مستقیم + تغییر زبان) -->
+          <div class="d-flex align-items-center d-lg-none">
+            <!-- دکمه تماس تلفنی -->
+            <a
+              href="tel:02136849166"
+              class="btn btn-category btn-sm rounded-circle d-flex align-items-center justify-content-center mx-2 shadow-sm text-white"
+              style="width: 38px; height: 38px"
+            >
+              <i class="bi bi-telephone-fill fs-6"></i>
+            </a>
+            <a href="#" class="lang-switcher">EN</a>
+          </div>
 
-      <!-- بخش منوها -->
-      <div class="collapse navbar-collapse" id="navbarNav"> 
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> 
-          <!-- لینک صفحه اصلی (کلاس active حذف شد) -->
-          <li class="nav-item"> 
-            <a class="nav-link" href="index.html">صفحه اصلی</a> 
-          </li> 
-          
-          <!-- ۱. منوی محصولات مخصوص موبایل و تبلت (کلاس active اضافه شد) --> 
-          <li class="nav-item d-lg-none"> 
-            <a class="nav-link active" aria-current="page" href="kitchen-products.html"> 
-              محصولات آشپزخانه 
-            </a> 
-          </li> 
-          
-          <!-- ۲. منوی محصولات مخصوص دسکتاپ (کلاس active اضافه شد) --> 
-          <li class="nav-item dropdown d-none d-lg-block"> 
-            <a 
-              class="nav-link active" 
-              href="kitchen-products.html" 
-              id="kitchenDropdown" 
-              aria-current="page"
-            > 
-              محصولات آشپزخانه 
-              <i class="bi bi-chevron-down" style="font-size: 0.75rem"></i> 
-            </a> 
-            <ul 
-              class="dropdown-menu border-0 shadow-sm py-2" 
-              aria-labelledby="kitchenDropdown" 
-              style="background-color: var(--cream-bg, #fdfbf7)" 
-            > 
-              <li> 
-                <a 
-                  class="dropdown-item py-2" 
-                  href="#pot-products" 
-                  style="text-align: right; padding-right: 15px; padding-left: 15px;" 
-                  >سرویس قابلمه</a 
-                > 
-              </li> 
-              <li> 
-                <a 
-                  class="dropdown-item py-2" 
-                  href="#metal-products" 
-                  style="text-align: right; padding-right: 15px; padding-left: 15px;" 
-                  >سرویس فلزی</a 
-                > 
-              </li> 
-              <li> 
-                <a 
-                  class="dropdown-item py-2" 
-                  href="#wood-products" 
-                  style="text-align: right; padding-right: 15px; padding-left: 15px;" 
-                  >سرویس چوبی</a 
-                > 
-              </li> 
-            </ul> 
-          </li> 
+          <!-- بخش منوها -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <!-- لینک صفحه اصلی (کلاس active حذف شد) -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">صفحه اصلی</a>
+              </li>
 
-          <li class="nav-item"> 
-            <a class="nav-link" href="archive-products.html">تجهیزات بایگانی</a> 
-          </li> 
-          <li class="nav-item"> 
-            <a class="nav-link" href="about.html">درباره ما</a> 
-          </li> 
-          <li class="nav-item"> 
-            <a class="nav-link" href="contact.html">تماس با ما</a> 
-          </li> 
-        </ul> 
-        
-        <div class="d-flex align-items-center gap-3"> 
-          <a href="#" class="lang-switcher d-none d-lg-block">EN</a> 
-          <!-- دکمه تماس نسخه دسکتاپ --> 
-          <a 
-            href="#contact" 
-            class="btn-contact-header d-none d-sm-inline-block" 
-          > 
-            درخواست مشاوره<i class="bi bi-telephone-fill ms-1"></i> 
-          </a> 
-        </div> 
-      </div> 
-    </div> 
-  </nav> 
-</header>
+              <!-- ۱. منوی محصولات مخصوص موبایل و تبلت (کلاس active اضافه شد) -->
+              <!-- منوی محصولات مخصوص موبایل و تبلت (با زیرمنوی تاشو) -->
+              <li class="nav-item d-lg-none">
+                <div class="d-flex align-items-center justify-content-between">
+                  <a
+                    class="nav-link flex-grow-1 mb-0 active"
+                    href="kitchen-products.html"
+                    aria-current="page"
+                  >
+                    محصولات آشپزخانه
+                  </a>
+                  <!-- 
+      این یک <button> است نه <a>، به همین دلیل اسکریپت پایین صفحه 
+      (که فقط دنبال <a> داخل navbar-nav می‌گرده) باعث بسته شدن 
+      زودهنگام منوی اصلی روی این دکمه نمی‌شود.
+    -->
+                  <button
+                    class="btn submenu-toggle-btn border-0 p-2 me-2"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#kitchenSubmenuMobile"
+                    aria-expanded="false"
+                    aria-controls="kitchenSubmenuMobile"
+                    aria-label="نمایش زیرمنوی محصولات آشپزخانه"
+                  >
+                    <i class="bi bi-chevron-down submenu-icon"></i>
+                  </button>
+                </div>
+                <!-- زیرمنوی تاشو (کالپس داخلیِ مستقل از منوی اصلی) -->
+                <ul
+                  class="collapse list-unstyled ps-4 submenu-mobile"
+                  id="kitchenSubmenuMobile"
+                >
+                  <li>
+                    <a
+                      class="nav-link py-2"
+                      href="kitchen-products.html#pot-products"
+                      >سرویس قابلمه</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link py-2"
+                      href="kitchen-products.html#metal-products"
+                      >سرویس فلزی</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link py-2"
+                      href="kitchen-products.html#wood-products"
+                      >سرویس چوبی</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ۲. منوی محصولات مخصوص دسکتاپ (کلاس active اضافه شد) -->
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a
+                  class="nav-link active"
+                  href="kitchen-products.html"
+                  id="kitchenDropdown"
+                  aria-current="page"
+                >
+                  محصولات آشپزخانه
+                  <i class="bi bi-chevron-down" style="font-size: 0.75rem"></i>
+                </a>
+                <ul
+                  class="dropdown-menu border-0 shadow-sm py-2"
+                  aria-labelledby="kitchenDropdown"
+                  style="background-color: var(--cream-bg, #fdfbf7)"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item py-2"
+                      href="#pot-products"
+                      style="
+                        text-align: right;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                      "
+                      >سرویس قابلمه</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item py-2"
+                      href="#metal-products"
+                      style="
+                        text-align: right;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                      "
+                      >سرویس فلزی</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item py-2"
+                      href="#wood-products"
+                      style="
+                        text-align: right;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                      "
+                      >سرویس چوبی</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="archive-products.html"
+                  >تجهیزات بایگانی</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">درباره ما</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">تماس با ما</a>
+              </li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-3">
+              <a href="#" class="lang-switcher d-none d-lg-block">EN</a>
+              <!-- دکمه تماس نسخه دسکتاپ -->
+              <a
+                href="#contact"
+                class="btn-contact-header d-none d-sm-inline-block"
+              >
+                درخواست مشاوره<i class="bi bi-telephone-fill ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main>
       <!-- Hero Section (تصویر ثابت هیرو با تگ ایمیج برای جلوگیری از خطای پس‌زمینه) -->
@@ -180,9 +243,8 @@
         <div class="d-block d-md-none">
           <div
             class="position-relative w-100 shadow-sm overflow-hidden text-center"
-            style="
-              height: 30vh;
-            ">
+            style="height: 30vh"
+          >
             <!-- عکس واقعی موبایل -->
             <img
               src="images/products_hero_mobile.png"
@@ -202,11 +264,8 @@
                   >محصولات آشپزخانه</span
                 >
               </h1>
-              <p
-                class=" small mb-0"
-                style="font-size: 0.9rem  !important"
-              >
-              زیبایی در جزئیات
+              <p class="small mb-0" style="font-size: 0.9rem !important">
+                زیبایی در جزئیات
               </p>
             </div>
           </div>
@@ -216,7 +275,7 @@
         <div class="d-none d-md-block">
           <div
             class="position-relative w-100 overflow-hidden shadow-sm"
-            style="height: 45vh; "
+            style="height: 45vh"
           >
             <!-- عکس واقعی دسکتاپ -->
             <img
@@ -227,12 +286,23 @@
             />
 
             <!-- باکس متن با سایه برای خوانایی بهتر روی عکس -->
-            <div class="position-absolute top-0 start-50 translate-middle-x mt-4 text-center w-100" style="padding: 15px 30px; z-index: 2; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);">
+            <div
+              class="position-absolute top-0 start-50 translate-middle-x mt-4 text-center w-100"
+              style="
+                padding: 15px 30px;
+                z-index: 2;
+                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+              "
+            >
               <!-- استفاده از fs-3 برای بزرگتر شدن عنوان و fw-bolder برای ضخامت بیشتر -->
               <h1 class="fw-bolder fs-3 mb-2 text-white">
-                کلکسیون <span style="color: var(--primary-green);">محصولات آشپزخانه</span>   </h1>
+                کلکسیون
+                <span style="color: var(--primary-green)"
+                  >محصولات آشپزخانه</span
+                >
+              </h1>
               <!-- بزرگتر کردن فونت زیرعنوان (1rem) و سفید کردن آن -->
-              <p class="text-white my-1 fw-bold" style="font-size: 1rem;">
+              <p class="text-white my-1 fw-bold" style="font-size: 1rem">
                 هارمونی بی‌نظیر چوب، فلز و طراحی مدرن برای چیدمان رویایی شما.
               </p>
             </div>
@@ -851,22 +921,30 @@
                 >
               </li>
               <li class="mb-2">
-                <a href="kitchen-products.html" class="small text-white text-decoration-none"
+                <a
+                  href="kitchen-products.html"
+                  class="small text-white text-decoration-none"
                   >محصولات آشپزخانه</a
                 >
               </li>
               <li class="mb-2">
-                <a href="archive-products.html" class="small text-white text-decoration-none"
+                <a
+                  href="archive-products.html"
+                  class="small text-white text-decoration-none"
                   >تجهیزات بایگانی</a
                 >
               </li>
               <li class="mb-2">
-                <a href="about.html" class="small text-white text-decoration-none"
+                <a
+                  href="about.html"
+                  class="small text-white text-decoration-none"
                   >درباره ما</a
                 >
               </li>
               <li class="mb-2">
-                <a href="contact.html" class="small text-white text-decoration-none"
+                <a
+                  href="contact.html"
+                  class="small text-white text-decoration-none"
                   >تماس با ما</a
                 >
               </li>
@@ -889,23 +967,43 @@
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const navbarCollapse = document.getElementById("navbarNav");
+        const kitchenSubmenu = document.getElementById("kitchenSubmenuMobile");
 
-        // بررسی می‌کنیم که آیا بوت‌استرپ کاملاً لود شده است یا خیر
         if (navbarCollapse && typeof bootstrap !== "undefined") {
           const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
             toggle: false,
           });
 
+          // نمونه‌ی Collapse مربوط به زیرمنوی موبایل (اگر در صفحه وجود داشته باشد)
+          const bsSubmenuCollapse = kitchenSubmenu
+            ? new bootstrap.Collapse(kitchenSubmenu, { toggle: false })
+            : null;
+
+          // ۱) کلیک روی هر لینک واقعی داخل منو → کل منوی همبرگری بسته شود
           document.querySelectorAll(".navbar-nav a").forEach((link) => {
             link.addEventListener("click", () => {
-              // اگر منو در حال نمایش است، آن را به طور مستقیم با دستور رسمی بوت‌استرپ ببند
               if (navbarCollapse.classList.contains("show")) {
                 bsCollapse.hide();
               }
             });
+          });
+
+          // ۲) نقطه‌ی اصلیِ رفع باگ:
+          // رویداد "hidden.bs.collapse" وقتی فایر می‌شه که انیمیشنِ بسته‌شدنِ
+          // منوی اصلی تمام شده. همون لحظه، اگر زیرمنو باز مونده بود، مجبورش می‌کنیم ببندد.
+          // بدون این خط، زیرمنو حالت "show" رو مستقل نگه می‌داره و دفعه‌ی بعد که
+          // کاربر منو رو باز می‌کنه، زیرمنو از قبل باز به نظر می‌رسه.
+          navbarCollapse.addEventListener("hidden.bs.collapse", () => {
+            if (
+              bsSubmenuCollapse &&
+              kitchenSubmenu.classList.contains("show")
+            ) {
+              bsSubmenuCollapse.hide();
+            }
           });
         }
       });
