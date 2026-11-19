@@ -661,3 +661,75 @@ body.lightbox-open {
     height: 45px;
   }
 }
+
+/* =========================================
+   صفحات «مشاهده همه» — این بخش را به انتهای style.css اضافه کنید
+========================================= */
+
+/* چیپ‌های فیلتر (تعداد تکه / رنگ) */
+.filter-chip {
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: var(--text-dark);
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  transition: var(--transition-smooth);
+}
+.filter-chip:hover,
+.filter-chip.active {
+  background: var(--primary-green-hover);
+  border-color: var(--primary-green-hover);
+  color: #fff;
+}
+/* در موبایل ردیف چیپ‌ها افقی اسکرول می‌شود */
+.filter-row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scrollbar-width: none;
+}
+
+/* برچسب تعداد تکه روی کارت */
+.badge-pieces {
+  background: var(--primary-green-light);
+  color: var(--primary-green-hover);
+  font-weight: 500;
+}
+
+/* دایره‌ی رنگ: بزرگ (مودال) و کوچک (کارت) */
+.swatch {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #cbd5e0;
+  padding: 0;
+  cursor: pointer;
+}
+.swatch.active {
+  box-shadow: 0 0 0 2px var(--primary-green-hover);
+}
+.swatch-sm {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #cbd5e0;
+}
+
+.product-item .card {
+  cursor: pointer;
+}
+/* دکمه‌ی اصلی مودال با سبز تیره‌تر برای خوانایی بهتر متن سفید */
+#productModal .btn-category {
+  background-color: var(--primary-green-hover);
+}
+
+/* عکس مودال: ارتفاعش از نصف ارتفاع صفحه بیشتر نشود تا دایره‌های رنگ بدون اسکرول دیده شوند */
+#productModal [data-m-img] {
+  max-height: 50vh;
+  width: auto;
+  max-width: 100%;
+}
+
