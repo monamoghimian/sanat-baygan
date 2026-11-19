@@ -216,7 +216,7 @@
       </nav>
 
       <h1 class="h3 fw-bold mb-2">سرویس درب چوبی</h1>
-      <p class="text-muted mb-4">سرویس آشپزخانه درب چوبی مگنتی، سرویس‌های ۱۵ پارچه، ۷ پارچه با استند، سطل پدالی و استند تک پارچه.</p>
+      <p class="text-muted mb-4">سرویس آشپزخانه درب چوبی مگنتی، سطل پدالی و استند</p>
 
       <!-- نوار فیلتر: در موبایل هر ردیف افقی اسکرول می‌شود -->
       <div class="bg-white rounded-4 shadow-sm p-3 mb-4">
@@ -224,11 +224,24 @@
           <span class="small fw-bold flex-shrink-0">تعداد پارچه:</span>
           <button type="button" class="filter-chip" data-filter="pieces" data-value="all">همه</button><button type="button" class="filter-chip" data-filter="pieces" data-value="15">۱۵ پارچه</button><button type="button" class="filter-chip" data-filter="pieces" data-value="7">۷ پارچه</button><button type="button" class="filter-chip" data-filter="pieces" data-value="single">۱ پارچه</button>
         </div>
-        <div class="d-flex align-items-center gap-2 filter-row">
-          <span class="small fw-bold flex-shrink-0">رنگ:</span>
-          <button type="button" class="filter-chip" data-filter="color" data-value="all">همه</button><button type="button" class="filter-chip" data-filter="color" data-value="gray">خاکستری</button><button type="button" class="filter-chip" data-filter="color" data-value="white">سفید</button><button type="button" class="filter-chip" data-filter="color" data-value="black">مشکی</button><button type="button" class="filter-chip" data-filter="color" data-value="cream">کرم</button>
-          <button type="button" class="btn btn-link btn-sm text-primary-green text-decoration-none flex-shrink-0 me-auto" data-reset>حذف فیلتر</button>
-        </div>
+        <!-- ردیف فیلتر رنگ -->
+<div class="d-flex align-items-center gap-2 filter-row">
+  <span class="small fw-bold flex-shrink-0">رنگ:</span>
+  <button type="button" class="filter-chip" data-filter="color" data-value="all">همه</button>
+  <button type="button" class="filter-chip" data-filter="color" data-value="gray">خاکستری</button>
+  <button type="button" class="filter-chip" data-filter="color" data-value="white">سفید</button>
+  <button type="button" class="filter-chip" data-filter="color" data-value="black">مشکی</button>
+  <button type="button" class="filter-chip" data-filter="color" data-value="cream">کرم</button>
+</div>
+
+<!-- ردیف مستقل حذف فیلتر -->
+<div class="text-start mt-2">
+  <button type="button"
+    class="btn btn-link btn-sm text-primary-green text-decoration-none p-0"
+    data-reset>
+    حذف فیلتر
+  </button>
+</div>
       </div>
 
       <!-- شبکه کارت‌ها: ۲ ستون موبایل، ۳ تبلت، ۴ دسکتاپ -->
