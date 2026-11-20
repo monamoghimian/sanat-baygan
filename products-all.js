@@ -6,8 +6,8 @@
   const fa = n => String(n).replace(/\d/g, d => "۰۱۲۳۴۵۶۷۸۹"[d]);
 
   // رنگ بدنه و رنگ چاپ: نام فارسی + کد رنگ
-  const COLORS = { gray: ["خاکستری", "#8b8b86"], white: ["سفید", "#f4f1ea"], black: ["مشکی", "#222"], cream: ["کرم", "#d9bd8f"] };
-  const PRINTS = { black: ["مشکی", "#111"], white: ["سفید", "#fff"], gold: ["طلایی", "#c9a227"], silver: ["نقره‌ای", "#b5b5b5"] };
+  const COLORS = { gray: ["خاکستری", "#8b8b86"], white: ["سفید", "#f4f1ea"], black: ["مشکی", "#222"], cream: ["کرم", "#d9bd8f"], beige: ["بژ", "#b99b6b"], blue: ["آبی", "#1f3550"], red: ["قرمز", "#6e2430"], gold: ["طلایی", "#7a6a35"], green: ["سبز", "#1f4a38"], purple: ["بنفش", "#4a2a45"], smoky: ["دودی", "#7d7f7c"] };
+const PRINTS = { black: ["مشکی", "#111"], white: ["سفید", "#fff"], gold: ["طلایی", "#c9a227"], silver: ["نقره‌ای", "#b5b5b5"] };
 
   // توکن "gray-black" = رنگ بدنه + رنگ چاپ. دایره رنگ: نیمه‌ی بدنه، نیمه‌ی چاپ
   const sw = t => { const [c, p] = t.split("-"); return p ? `linear-gradient(135deg,${COLORS[c][1]} 55%,${PRINTS[p][1]} 55%)` : COLORS[c][1]; };

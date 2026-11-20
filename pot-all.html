@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سرویس قابلمه | همه سری‌ها و رنگ‌ها | صنعت بایگان آریا</title>
+    <meta name="description" content="همه سرویس‌های قابلمه گرانیتی صنعت بایگان آریا: سری Galaxy و Marble در سرویس ۱۱ و ۱۶ پارچه و قابلمه‌های تکی، با رنگ‌های متنوع." />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- تنظیمات صفحه: مسیر عکس‌ها، شماره تماس مودال و فایل کاتالوگ -->
+  <body data-img-dir="images/pot/" data-tel="tel:09123060030" data-catalog="catalog/pot.pdf">
+    <!-- هدر: عیناً از kitchen-products.html -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- گروه سمت راست: دکمه همبرگری و لوگو -->
+          <div class="d-flex align-items-center">
+            <!-- دکمه همبرگری منوی موبایل -->
+            <button
+              class="navbar-toggler border-0 p-0 me-1"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="تغییر وضعیت منو"
+              style="box-shadow: none"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- لوگو -->
+            <a
+              class="navbar-brand d-flex align-items-center m-0"
+              href="index.html"
+            >
+              <img
+                src="images/logohigh.png"
+                alt="لوگو صنعت بایگان آریا"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+          </div>
+
+          <!-- گروه سمت چپ: باکس دکمه‌های مخصوص موبایل (تماس مستقیم + تغییر زبان) -->
+          <div class="d-flex align-items-center d-lg-none">
+            <!-- دکمه تماس تلفنی -->
+            <a
+              href="tel:02136849166"
+              class="btn btn-category btn-sm rounded-circle d-flex align-items-center justify-content-center mx-2 shadow-sm text-white"
+              style="width: 38px; height: 38px"
+            >
+              <i class="bi bi-telephone-fill fs-6"></i>
+            </a>
+            <a href="#" class="lang-switcher">العربية</a>
+          </div>
+
+          <!-- بخش منوها -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <!-- لینک صفحه اصلی (کلاس active حذف شد) -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">صفحه اصلی</a>
+              </li>
+
+              <!-- ۱. منوی محصولات مخصوص موبایل و تبلت (کلاس active اضافه شد) -->
+              <!-- منوی محصولات مخصوص موبایل و تبلت (با زیرمنوی تاشو) -->
+              <li class="nav-item d-lg-none">
+                <div class="d-flex align-items-center justify-content-between">
+                  <a
+                    class="nav-link flex-grow-1 mb-0 active"
+                    href="kitchen-products.html"
+                    aria-current="page"
+                  >
+                    محصولات آشپزخانه
+                  </a>
+                  <!-- 
+      این یک <button> است نه <a>، به همین دلیل اسکریپت پایین صفحه 
+      (که فقط دنبال <a> داخل navbar-nav می‌گرده) باعث بسته شدن 
+      زودهنگام منوی اصلی روی این دکمه نمی‌شود.
+    -->
+                  <button
+                    class="btn submenu-toggle-btn border-0 p-2 me-2"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#kitchenSubmenuMobile"
+                    aria-expanded="false"
+                    aria-controls="kitchenSubmenuMobile"
+                    aria-label="نمایش زیرمنوی محصولات آشپزخانه"
+                  >
+                    <i class="bi bi-chevron-down submenu-icon"></i>
+                  </button>
+                </div>
+                <!-- زیرمنوی تاشو (کالپس داخلیِ مستقل از منوی اصلی) -->
+                <ul
+                  class="collapse list-unstyled ps-4 submenu-mobile"
+                  id="kitchenSubmenuMobile"
+                >
+                  <li>
+                    <a
+                      class="nav-link py-2"
+                      href="kitchen-products.html#pot-products"
+                      >سرویس قابلمه</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link py-2"
+                      href="kitchen-products.html#metal-products"
+                      > سرویس درب فلزی</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link py-2"
+                      href="kitchen-products.html#wood-products"
+                      >سرویس درب چوبی</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ۲. منوی محصولات مخصوص دسکتاپ (کلاس active اضافه شد) -->
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a
+                  class="nav-link active"
+                  href="kitchen-products.html"
+                  id="kitchenDropdown"
+                  aria-current="page"
+                >
+                  محصولات آشپزخانه
+                  <i class="bi bi-chevron-down" style="font-size: 0.75rem"></i>
+                </a>
+                <ul
+                  class="dropdown-menu border-0 shadow-sm py-2"
+                  aria-labelledby="kitchenDropdown"
+                  style="background-color: var(--cream-bg, #fdfbf7)"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item py-2"
+                      href="kitchen-products.html#pot-products"
+                      style="
+                        text-align: right;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                      "
+                      >سرویس قابلمه</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item py-2"
+                      href="kitchen-products.html#metal-products"
+                      style="
+                        text-align: right;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                      "
+                      > سرویس درب فلزی</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item py-2"
+                      href="kitchen-products.html#wood-products"
+                      style="
+                        text-align: right;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                      "
+                      >سرویس درب چوبی </a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="archive-products.html"
+                  >تجهیزات بایگانی</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">درباره ما</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">تماس با ما</a>
+              </li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-3">
+              <a href="#" class="lang-switcher d-none d-lg-block">العربية</a>
+              <!-- دکمه تماس نسخه دسکتاپ -->
+              <a
+                href="tel:09123060030"
+                class="btn-contact-header d-none d-sm-inline-block"
+              >
+                درخواست مشاوره<i class="bi bi-telephone-fill ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-4">
+      <!-- مسیر صفحه (Breadcrumb) -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb small">
+          <li class="breadcrumb-item"><a href="index.html">صفحه اصلی</a></li>
+          <li class="breadcrumb-item"><a href="kitchen-products.html">محصولات آشپزخانه</a></li>
+          <li class="breadcrumb-item active" aria-current="page">سرویس قابلمه</li>
+        </ol>
+      </nav>
+
+      <h1 class="h3 fw-bold mb-2">سرویس قابلمه</h1>
+      <p class="text-muted mb-4">سرویس قابلمه گرانیتی با دستهٔ استیل PVD و درب شیشه‌ای، در سری‌های Galaxy و Marble</p>
+
+      <!-- نوار فیلتر: در موبایل هر ردیف افقی اسکرول می‌شود -->
+      <div class="bg-white rounded-4 shadow-sm p-3 mb-4">
+        <div class="d-flex align-items-center gap-2 mb-2 filter-row">
+          <span class="small fw-bold flex-shrink-0">تعداد پارچه:</span>
+          <button type="button" class="filter-chip" data-filter="pieces" data-value="11">۱۱ پارچه</button><button type="button" class="filter-chip" data-filter="pieces" data-value="16">۱۶ پارچه</button><button type="button" class="filter-chip" data-filter="pieces" data-value="single">۱ پارچه</button>
+        </div>
+        <!-- ردیف فیلتر رنگ -->
+<div class="d-flex align-items-center gap-2 filter-row">
+  <span class="small fw-bold flex-shrink-0">رنگ:</span>
+  <button type="button" class="filter-chip" data-filter="color" data-value="red">قرمز</button>
+  <button type="button" class="filter-chip" data-filter="color" data-value="gold">طلایی</button>
+  <button type="button" class="filter-chip" data-filter="color" data-value="green">سبز</button>
+  <button type="button" class="filter-chip" data-filter="color" data-value="blue">آبی</button>
+  <button type="button" class="filter-chip" data-filter="color" data-value="purple">بنفش</button>
+  <button type="button" class="filter-chip" data-filter="color" data-value="black">مشکی</button>
+  <button type="button" class="filter-chip" data-filter="color" data-value="smoky">دودی</button>
+  <button type="button" class="filter-chip" data-filter="color" data-value="cream">کرم</button>
+  <button type="button" class="filter-chip" data-filter="color" data-value="white">سفید</button>
+</div>
+
+<!-- ردیف مستقل حذف فیلتر -->
+<div class="text-start mt-2">
+  <button type="button"
+    class="btn btn-link btn-sm text-primary-green text-decoration-none p-0"
+    data-reset>
+    حذف فیلتر
+  </button>
+</div>
+      </div>
+
+      <!-- شبکه کارت‌ها: ۲ ستون موبایل، ۳ تبلت، ۴ دسکتاپ -->
+      <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-3 g-md-4" id="productGrid">
+          <!-- کارت: Galaxy Series -->
+          <div class="col product-item" data-item data-base="galaxy" data-name="Galaxy Series" data-pieces="11" data-colors="blue red gold green purple" data-v11="blue red gold green purple">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 product-card-hover" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#productModal">
+              <div class="product-img-wrapper"><img src="images/pot/galaxy-blue-11.webp" alt="سرویس قابلمه Galaxy - ۱۱ پارچه" loading="lazy" /></div>
+              <h3 class="h6 fw-bold mb-2">Galaxy Series</h3>
+              <div class="mb-2"><span class="badge badge-pieces rounded-pill">۱۱ پارچه</span></div>
+              <p class="text-muted small mb-2">پوشش گرانیت، دستهٔ استیل PVD، درب شیشه‌ای</p>
+              <div class="d-flex flex-wrap justify-content-center gap-1" data-dots></div><!-- دایره‌های رنگ با جاوااسکریپت ساخته می‌شوند -->
+            </div>
+          </div>
+          <!-- کارت: Marble Series -->
+          <div class="col product-item" data-item data-base="marble" data-name="Marble Series" data-pieces="16" data-colors="black smoky cream white" data-v16="black smoky cream white">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 product-card-hover" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#productModal">
+              <div class="product-img-wrapper"><img src="images/pot/marble-black-16.webp" alt="سرویس قابلمه Marble - ۱۶ پارچه" loading="lazy" /></div>
+              <h3 class="h6 fw-bold mb-2">Marble Series</h3>
+              <div class="mb-2"><span class="badge badge-pieces rounded-pill">۱۶ پارچه</span></div>
+              <p class="text-muted small mb-2">شامل گریل، جاقاشقی و زیرقابلمه‌ای سیلیکونی</p>
+              <div class="d-flex flex-wrap justify-content-center gap-1" data-dots></div><!-- دایره‌های رنگ با جاوااسکریپت ساخته می‌شوند -->
+            </div>
+          </div>
+          <!-- کارت: قابلمه ۲۸ (Galaxy) -->
+          <div class="col product-item" data-item data-base="casserole-28" data-name="قابلمه ۲۸ (Galaxy)" data-pieces="" data-colors="blue red gold green purple" data-v="blue red gold green purple">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 product-card-hover" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#productModal">
+              <div class="product-img-wrapper"><img src="images/pot/casserole-28-blue.webp" alt="قابلمه ۲۸ سانتی‌متر گرانیتی" loading="lazy" /></div>
+              <h3 class="h6 fw-bold mb-2">قابلمه ۲۸ (Galaxy)</h3>
+              <div class="mb-2"><span class="badge badge-pieces rounded-pill">۱ پارچه</span></div>
+              <p class="text-muted small mb-2">Ø ۲۸ سانتی‌متر · ارتفاع ۱۴٫۵ · با درب شیشه‌ای</p>
+              <div class="d-flex flex-wrap justify-content-center gap-1" data-dots></div><!-- دایره‌های رنگ با جاوااسکریپت ساخته می‌شوند -->
+            </div>
+          </div>
+          <!-- کارت: قابلمه ۲۴ (Galaxy) -->
+          <div class="col product-item" data-item data-base="casserole-24" data-name="قابلمه ۲۴ (Galaxy)" data-pieces="" data-colors="blue red gold green purple" data-v="blue red gold green purple">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 product-card-hover" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#productModal">
+              <div class="product-img-wrapper"><img src="images/pot/casserole-24-blue.webp" alt="قابلمه ۲۴ سانتی‌متر گرانیتی" loading="lazy" /></div>
+              <h3 class="h6 fw-bold mb-2">قابلمه ۲۴ (Galaxy)</h3>
+              <div class="mb-2"><span class="badge badge-pieces rounded-pill">۱ پارچه</span></div>
+              <p class="text-muted small mb-2">Ø ۲۴ سانتی‌متر · ارتفاع ۱۳٫۵ · با درب شیشه‌ای</p>
+              <div class="d-flex flex-wrap justify-content-center gap-1" data-dots></div><!-- دایره‌های رنگ با جاوااسکریپت ساخته می‌شوند -->
+            </div>
+          </div>
+          <!-- کارت: قابلمه ۲۰ (Galaxy) -->
+          <div class="col product-item" data-item data-base="casserole-20" data-name="قابلمه ۲۰ (Galaxy)" data-pieces="" data-colors="blue red gold green purple" data-v="blue red gold green purple">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 product-card-hover" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#productModal">
+              <div class="product-img-wrapper"><img src="images/pot/casserole-20-blue.webp" alt="قابلمه ۲۰ سانتی‌متر گرانیتی" loading="lazy" /></div>
+              <h3 class="h6 fw-bold mb-2">قابلمه ۲۰ (Galaxy)</h3>
+              <div class="mb-2"><span class="badge badge-pieces rounded-pill">۱ پارچه</span></div>
+              <p class="text-muted small mb-2">Ø ۲۰ سانتی‌متر · ارتفاع ۱۱٫۵ · با درب شیشه‌ای</p>
+              <div class="d-flex flex-wrap justify-content-center gap-1" data-dots></div><!-- دایره‌های رنگ با جاوااسکریپت ساخته می‌شوند -->
+            </div>
+          </div>
+          <!-- کارت: قابلمه ۱۶ (Galaxy) -->
+          <div class="col product-item" data-item data-base="casserole-16" data-name="قابلمه ۱۶ (Galaxy)" data-pieces="" data-colors="blue red gold green purple" data-v="blue red gold green purple">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 product-card-hover" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#productModal">
+              <div class="product-img-wrapper"><img src="images/pot/casserole-16-blue.webp" alt="قابلمه ۱۶ سانتی‌متر گرانیتی" loading="lazy" /></div>
+              <h3 class="h6 fw-bold mb-2">قابلمه ۱۶ (Galaxy)</h3>
+              <div class="mb-2"><span class="badge badge-pieces rounded-pill">۱ پارچه</span></div>
+              <p class="text-muted small mb-2">Ø ۱۶ سانتی‌متر · ارتفاع ۹٫۵ · با درب شیشه‌ای</p>
+              <div class="d-flex flex-wrap justify-content-center gap-1" data-dots></div><!-- دایره‌های رنگ با جاوااسکریپت ساخته می‌شوند -->
+            </div>
+          </div>
+          <!-- کارت: قابلمه کم‌عمق ۲۸ (Galaxy) -->
+          <div class="col product-item" data-item data-base="shallow-28" data-name="قابلمه کم‌عمق ۲۸ (Galaxy)" data-pieces="" data-colors="blue red gold green purple" data-v="blue red gold green purple">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 product-card-hover" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#productModal">
+              <div class="product-img-wrapper"><img src="images/pot/shallow-28-blue.webp" alt="قابلمه کم‌عمق ۲۸ سانتی‌متر گرانیتی" loading="lazy" /></div>
+              <h3 class="h6 fw-bold mb-2">قابلمه کم‌عمق ۲۸ (Galaxy)</h3>
+              <div class="mb-2"><span class="badge badge-pieces rounded-pill">۱ پارچه</span></div>
+              <p class="text-muted small mb-2">Ø ۲۸ سانتی‌متر · ارتفاع ۸ · با درب شیشه‌ای</p>
+              <div class="d-flex flex-wrap justify-content-center gap-1" data-dots></div><!-- دایره‌های رنگ با جاوااسکریپت ساخته می‌شوند -->
+            </div>
+          </div>
+          <!-- کارت: تابه ۲۴ (Galaxy) -->
+          <div class="col product-item" data-item data-base="pan-24" data-name="تابه ۲۴ (Galaxy)" data-pieces="" data-colors="blue red gold green purple" data-v="blue red gold green purple">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3 product-card-hover" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#productModal">
+              <div class="product-img-wrapper"><img src="images/pot/pan-24-blue.webp" alt="تابه ۲۴ سانتی‌متر گرانیتی" loading="lazy" /></div>
+              <h3 class="h6 fw-bold mb-2">تابه ۲۴ (Galaxy)</h3>
+              <div class="mb-2"><span class="badge badge-pieces rounded-pill">۱ پارچه</span></div>
+              <p class="text-muted small mb-2">Ø ۲۴ سانتی‌متر · ارتفاع ۵٫۵ · بدون درب</p>
+              <div class="d-flex flex-wrap justify-content-center gap-1" data-dots></div><!-- دایره‌های رنگ با جاوااسکریپت ساخته می‌شوند -->
+            </div>
+          </div>
+      </div>
+
+      <!-- پیام وقتی فیلتر نتیجه‌ای ندارد -->
+      <div id="emptyMsg" class="text-center text-muted py-5" hidden>
+        محصولی با این فیلتر پیدا نشد. <button type="button" class="btn btn-link text-primary-green" data-reset>حذف فیلتر</button>
+      </div>
+
+      <!-- دانلود کاتالوگ همین دسته -->
+      <section class="bg-cream-section rounded-4 p-4 mt-5 text-center">
+        <h2 class="h5 fw-bold mb-3">کاتالوگ کامل سرویس قابلمه</h2>
+        <a href="catalog/pot.pdf" download class="btn btn-category"><i class="bi bi-download ms-1"></i>دانلود کاتالوگ PDF</a>
+      </section>
+    </main>
+
+    <!-- مودال گالری رنگ‌ها: یک مودال برای همه کارت‌ها -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="mTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-4 border-0">
+          <div class="modal-header border-0 pb-0">
+            <h2 class="h5 fw-bold mb-0" id="mTitle" data-m-title></h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="بستن"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center mb-3">
+              <img data-m-img class="img-fluid rounded-3 zoomable-image" alt="" />
+              <p data-m-msg class="text-muted py-5 mb-0" hidden>عکس این ترکیب هنوز آماده نشده است. رنگ دیگری انتخاب کنید.</p>
+            </div>
+            <p class="text-muted small mb-2" data-m-sub></p>
+            <div class="d-flex flex-wrap gap-2 mb-3" data-m-pieces></div>
+            <div class="d-flex flex-wrap gap-2 mb-4" data-m-swatches></div>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-category d-lg-none" data-m-tel><i class="bi bi-telephone-fill ms-1"></i>درخواست مشاوره</a>
+              
+            </div>
+          </div>
+          <!-- لایت‌باکس بزرگ‌نمایی (داخل مودال تا فوکوس بوت‌استرپ مشکلی نداشته باشد) -->
+          <dialog class="lightbox-modal" id="lightbox">
+            <div class="lightbox-container"><button type="button" class="lightbox-close-btn" aria-label="بستن">&times;</button><img alt="" /></div>
+          </dialog>
+        </div>
+      </div>
+    </div>
+
+    <!-- فوتر: عیناً از kitchen-products.html -->
+    <footer class="pt-4 pb-3 mt-5">
+      <div class="container">
+        <div class="row g-4" dir="rtl">
+          <!-- ستون اول (راست): لوگو و شبکه‌های اجتماعی -->
+          <!-- در موبایل وسط‌چین و در دسکتاپ راست‌چین -->
+          <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+            <div class="d-flex flex-column flex-md-row align-items-center mb-3">
+              <img
+                src="images/logohigh.png"
+                alt="لوگو صنعت بایگان آریا"
+                height="60"
+                class="ms-md-3 mb-2 mb-md-0"
+                style="filter: brightness(0) invert(1)"
+              />
+              <div>
+                <h4 class="h5 fw-bold mb-1 text-white">صنعت بایگان آریا</h4>
+                <p class="small text-white-50 mb-0" style="font-size: 0.85rem">
+                  تولید کننده محصولات آشپزخانه<br />و تجهیزات بایگانی
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="d-flex gap-3 justify-content-center justify-content-md-start"
+            >
+              <!-- این دیو خالی فقط در دسکتاپ دیده می‌شود تا آیکون‌ها را دقیقاً زیر متن هل دهد -->
+              <div class="d-none d-md-block" style="width: 75px"></div>
+              <a href="#" class="footer-social-link">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="#" class="footer-social-link">
+                <i class="bi bi-telegram"></i>
+              </a>
+              <a href="#" class="footer-social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ستون دوم: کارخانه و دفتر مرکزی -->
+          <!-- راست‌چین استاندارد برای حفظ نظم عمودی آیکون‌ها در موبایل -->
+          <div class="col-12 col-md-6 col-lg-4 text-start">
+            <h4 class="h6 fw-bold mb-3 text-white">کارخانه و دفتر مرکزی</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2 d-flex align-items-start text-white">
+                <i class="bi bi-geo-alt fs-5 ms-2 mt-1"></i>
+                <span class="small" style="font-size: 0.75rem"
+                  >تهران، جاده خاوران، روبه‌روی فرون‌آباد، جنب باسکول آلمانی،
+                  خیابان امام حسین (ع)، بعد از بن‌بست دوم، پلاک 39</span>
+              </li>
+              <li class="mb-2 d-flex align-items-center text-white">
+                <i class="bi bi-telephone fs-5 ms-2"></i>
+                <span dir="ltr" class="small">021 - 36849166</span>
+              </li>
+              <li class="mb-2 d-flex align-items-center text-white">
+                <i class="bi bi-printer fs-5 ms-2"></i>
+                <span dir="ltr" class="small">021 - 36849257</span>
+              </li>
+              <li class="mb-2 d-flex align-items-center text-white">
+                <i class="bi bi-phone fs-5 ms-2"></i>
+                <span dir="ltr" class="small"
+                  >0912 - 3171607 | 0912 - 3060030</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- ستون سوم: محصولات -->
+          <!-- استفاده از col-6 برای اختصاص ۵۰٪ عرض در موبایل (کنار ستون بعدی قرار می‌گیرد) -->
+          <div class="col-6 col-md-6 col-lg-2 text-start">
+            <h4 class="h6 fw-bold mb-3 text-white">محصولات</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >سرویس قابلمه</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >سرویس درب فلزی</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="small text-white text-decoration-none"
+                  >سرویس  درب چوبی</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- ستون چهارم (چپ): دسترسی سریع -->
+          <!-- استفاده از col-6 برای اختصاص ۵۰٪ عرض در موبایل -->
+          <div class="col-6 col-md-6 col-lg-2 text-start">
+            <h4 class="h6 fw-bold mb-3 text-white">دسترسی سریع</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a
+                  href="index.html"
+                  class="small text-white text-decoration-none"
+                  >صفحه اصلی</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="kitchen-products.html"
+                  class="small text-white text-decoration-none"
+                  >محصولات آشپزخانه</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="archive-products.html"
+                  class="small text-white text-decoration-none"
+                  >تجهیزات بایگانی</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="about.html"
+                  class="small text-white text-decoration-none"
+                  >درباره ما</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="contact.html"
+                  class="small text-white text-decoration-none"
+                  >تماس با ما</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="my-3 border-white opacity-25" />
+
+        <!-- کپی‌رایت -->
+        <div
+          class="text-center text-white-50 small pb-2"
+          dir="ltr"
+          style="font-size: 0.8rem"
+        >
+          © 2026 Sanat Baygan Aria. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- اسکریپت منوی موبایل (همان صفحه اصلی) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarCollapse = document.getElementById("navbarNav");
+        const kitchenSubmenu = document.getElementById("kitchenSubmenuMobile");
+
+        if (navbarCollapse && typeof bootstrap !== "undefined") {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false,
+          });
+
+          // نمونه‌ی Collapse مربوط به زیرمنوی موبایل (اگر در صفحه وجود داشته باشد)
+          const bsSubmenuCollapse = kitchenSubmenu
+            ? new bootstrap.Collapse(kitchenSubmenu, { toggle: false })
+            : null;
+
+          // ۱) کلیک روی هر لینک واقعی داخل منو → کل منوی همبرگری بسته شود
+          document.querySelectorAll(".navbar-nav a").forEach((link) => {
+            link.addEventListener("click", () => {
+              if (navbarCollapse.classList.contains("show")) {
+                bsCollapse.hide();
+              }
+            });
+          });
+
+          // ۲) نقطه‌ی اصلیِ رفع باگ:
+          // رویداد "hidden.bs.collapse" وقتی فایر می‌شه که انیمیشنِ بسته‌شدنِ
+          // منوی اصلی تمام شده. همون لحظه، اگر زیرمنو باز مونده بود، مجبورش می‌کنیم ببندد.
+          // بدون این خط، زیرمنو حالت "show" رو مستقل نگه می‌داره و دفعه‌ی بعد که
+          // کاربر منو رو باز می‌کنه، زیرمنو از قبل باز به نظر می‌رسه.
+          navbarCollapse.addEventListener("hidden.bs.collapse", () => {
+            if (
+              bsSubmenuCollapse &&
+              kitchenSubmenu.classList.contains("show")
+            ) {
+              bsSubmenuCollapse.hide();
+            }
+          });
+        }
+      });
+    </script>
+    <!-- برچسب تعداد پارچه در مودال؛ در صفحه فلزی مقدارهای خودش را می‌گذارید -->
+    <script>window.PIECE_LABELS = { 11: "سرویس ۱۱ پارچه گرانیتی با درب شیشه‌ای", 16: "سرویس ۱۶ پارچه گرانیتی با گریل، جاقاشقی و زیرقابلمه‌ای" };</script>
+    <script src="products-all.js"></script>
+  </body>
+</html>
