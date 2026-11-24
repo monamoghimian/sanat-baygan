@@ -53,8 +53,19 @@ const PRINTS = { black: ["مشکی", "#111"], white: ["سفید", "#fff"], gold:
   /* ---------- فیلتر ---------- */
   let fp = "all", fc = "all";                 // فیلتر فعلی: تعداد پارچه، رنگ
   const empty = $("#emptyMsg");
+    // آیا این کارت با فیلتر تعداد پارچه‌ی فعلی می‌خواند؟
+  const matchPieces = el => fp === "all" || (fp === "single" ? !el.dataset.pieces : el.dataset.pieces.split(" ").includes(fp));
   function applyFilters() {
     let n = 0;
+        // فقط رنگ‌هایی که در تعداد پارچه‌ی انتخاب‌شده وجود دارند نمایش داده شوند
+    const okColors = new Set(items.filter(matchPieces).flatMap(el => el.dataset.colors.split(" ")));
+    if (fc !== "all" && !okColors.has(fc)) fc = "all";   // رنگ انتخاب‌شده دیگر وجود ندارد: فیلتر رنگ حذف شود
+    document.querySelectorAll('[data-filter="color"]').forEach(b => { b.hidden = b.dataset.value !== "all" && !okColors.has(b.dataset.value); });
+
+        // فقط تعداد پارچه‌هایی که با رنگ انتخاب‌شده وجود دارند نمایش داده شوند
+    const okPieces = new Set(items.filter(el => fc === "all" || el.dataset.colors.split(" ").includes(fc)).flatMap(el => el.dataset.pieces ? el.dataset.pieces.split(" ") : ["single"]));
+    document.querySelectorAll('[data-filter="pieces"]').forEach(b => { b.hidden = b.dataset.value !== "all" && !okPieces.has(b.dataset.value); });
+    
     items.forEach(el => {
       const ok = (fp === "all" || (fp === "single" ? !el.dataset.pieces : el.dataset.pieces.split(" ").includes(fp))) &&  // single = محصولات ۱ پارچه (سطل و استند)
                  (fc === "all" || el.dataset.colors.split(" ").includes(fc));
